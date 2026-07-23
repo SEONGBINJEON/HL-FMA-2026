@@ -1,0 +1,30 @@
+# ROS 2
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+venv/
+
+# YOLO 학습 결과 (용량 큼 — 별도 공유)
+*.pt
+runs/
+
+# Arduino
+*.hex
+*.elf
+
+# 데이터 · 로그
+*.bag
+*.db3
+*.csv
+*.log
+
+# OS / 에디터
+.DS_Store
+.vscode/
+*.swp
