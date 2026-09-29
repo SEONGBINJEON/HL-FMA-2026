@@ -1,0 +1,5 @@
+# Observed on 2026-09-29; not a resolved or restored lockfile.
+depthai==3.10.0
+numpy==2.5.3
+opencv-python-headless==5.0.0.93
+pip==24.0

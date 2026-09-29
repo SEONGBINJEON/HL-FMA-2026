@@ -1,0 +1,26 @@
+{
+  "captured_kst": "2026-09-29T15:24:50.366188+09:00",
+  "python": "3.12.3",
+  "architecture": "x86_64",
+  "os_release": "Ubuntu 24.04.5 LTS",
+  "kernel": "7.0.0-31-generic",
+  "note": "Installed distribution names and versions only; no environment variables, credentials, package origins, or device access. Observation, not a tested restore lock.",
+  ".venv": {
+    "distributions": 1,
+    "file": "venv-installed.txt"
+  },
+  ".venv-oak": {
+    "distributions": 4,
+    "file": "venv-oak-installed.txt"
+  },
+  ".venv-rtk": {
+    "distributions": 12,
+    "file": "venv-rtk-installed.txt"
+  },
+  ".venv-yolo": {
+    "distributions": 61,
+    "file": "venv-yolo-installed.txt"
+  },
+  "g++": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "cmake": "cmake version 3.28.3"
+}

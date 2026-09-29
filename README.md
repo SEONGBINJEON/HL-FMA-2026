@@ -4,6 +4,12 @@
 
 [전체 기록](docs/retrospective/2026-09-29/README.md) · [개발 과정](docs/retrospective/2026-09-29/TIMELINE.md) · [구성](docs/retrospective/2026-09-29/ARCHITECTURE.md) · [첫 신호등 실패 분석](docs/retrospective/2026-09-29/LIGHT1_FAILURE.md)
 
+## 공부와 새 노트북 이전
+
+[학습 순서](docs/learning/README.md)에서 시작해 [시스템 해설](docs/learning/SYSTEM_WALKTHROUGH.md) → [코드 읽기 지도](docs/learning/CODE_READING_GUIDE.md) → [차량 없는 실습](docs/learning/LABS.md) 순서로 읽는다. [개발 방식·면접 준비](docs/learning/DEVELOPMENT_AND_INTERVIEW.md)는 실제 성과와 한계를 설명하는 기준을 담는다.
+
+[노트북 이전 안내](docs/migration/README.md)에 GitHub/USB의 역할, 분리된 Python 환경 기록, 복원·검증 절차와 별도 인증 이전 항목을 정리했다. USB의 원시 자료가 있어야 당시 자료를 이용한 전체 분석을 이어갈 수 있다.
+
 ## 구현 범위
 
 - RTK GPS 기록과 경로 추종, 전진으로 초기 방향 취득, 적응형 lookahead와 경로 진입.

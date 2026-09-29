@@ -27,9 +27,11 @@ Python3와C++11을 지원하는g++가 필요하다. 포함된 소스에서 `firm
 | OAK 라이브 환경 | requirements-oak.txt는 당시 기록. YOLO 환경과 분리돼 있었음 |
 | RTK/NTRIP | requirements-rtk.txt 및 별도 비공개 인증 설정 필요 |
 | RealSense 환경 | requirements-camera.txt는 초기 자료 수집 경로. 최종 OAK 실행과 구분 |
-| YOLO/Ultralytics | 기존 별도 .venv-yolo 환경이 필요했으며 이 아카이브에 완전한 잠금 파일은 없음 |
+| YOLO/Ultralytics | 기존 별도 .venv-yolo 환경. migration/environment에 관측 이름·버전 목록 보존; 완전한 재현 잠금은 아님 |
 | 원시 주행·카메라·GNSS | analysis/audit.py의 실제 기록 재계산에 필요, 이 저장소에 포함하지 않음 |
 
 여러 requirements를 무조건 하나의 환경에 합치는 설치법은 검증하지 않았다. 전체 테스트 중 실제 자료·외부 경로·빌드 산출물을 참조하는 항목은 그대로 실행하면 누락 오류가 날 수 있다. 전체 회귀가 이 사본만으로 통과한다고 주장하지 않는다.
 
 `main_event_release.py verify`는 대회 당시 원본 환경을 검증하는 명령이다. 이 정리 사본의 검증 기준은 루트 PACKAGE_MANIFEST.json이며, 원본168파일 전체가 복제됐다는 뜻이 아니다.
+
+학습 순서는 [learning/README](learning/README.md), 원본 자료와 다른 노트북 복원은 [migration/README](migration/README.md)를 따른다.

@@ -1,9 +1,9 @@
 {
   "created_kst": "2026-09-29T15:00:45.591457+09:00",
-  "purpose": "Post-competition source and documentation archive; partial offline reproducibility, no live vehicle validation.",
+  "purpose": "Post-competition source, learning and migration documentation; partial offline reproducibility, no live vehicle validation.",
   "source_release": "main_event_candidate_20260920_143442",
   "remote_repository": "SEONGBINJEON/HL-FMA-2026",
-  "file_count_excluding_manifest": 273,
+  "file_count_excluding_manifest": 285,
   "files": [
     {
       "path": ".gitignore",
@@ -12,8 +12,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "b14a23962aaaf793bfea6d198bd697e7dab2810c8d279b22d5beefc320ace9c1",
-      "bytes": 3416
+      "sha256": "71de7c14c074a603dad1646baf3739d6ef92f2a69bf2f0191ebf276685cf9b7e",
+      "bytes": 4119
     },
     {
       "path": "config/main_event.json",
@@ -37,8 +37,8 @@
     },
     {
       "path": "docs/REPRODUCIBILITY.md",
-      "sha256": "d5a5603531c8c985ded7226b8fa14860468ebf1598164b327c715b27c29ff7c8",
-      "bytes": 2632
+      "sha256": "5b3c1825c023e1861d7996831e80763a93651983f862ee4c999559f19bff5bfd",
+      "bytes": 2811
     },
     {
       "path": "docs/THIRD_PARTY.md",
@@ -76,9 +76,69 @@
       "bytes": 1181
     },
     {
+      "path": "docs/learning/CODE_READING_GUIDE.md",
+      "sha256": "6bd5aec88380704a7f3cc8d3358c6408e06227904bc97364f405d016468a0913",
+      "bytes": 4485
+    },
+    {
+      "path": "docs/learning/DEVELOPMENT_AND_INTERVIEW.md",
+      "sha256": "79e344777991d8a51ed43d1a8c70a048bf79d8e539de228640b0ffc6670607f8",
+      "bytes": 5120
+    },
+    {
+      "path": "docs/learning/LABS.md",
+      "sha256": "7c7b45ca2d0818309a75cd32abe1a16d0f75a2da391e3e4f5dc0c006faa5e9b9",
+      "bytes": 3254
+    },
+    {
+      "path": "docs/learning/README.md",
+      "sha256": "9c262b6f10b3af84bf3ffe0e65e1c3dce7010736c70acce83188625be9833530",
+      "bytes": 2890
+    },
+    {
+      "path": "docs/learning/SYSTEM_WALKTHROUGH.md",
+      "sha256": "b7f95353ea6095b652d5640534564aa302582c6be32b732021820a7b1e9eaf2b",
+      "bytes": 6215
+    },
+    {
       "path": "docs/manual_protocol_v1.md",
       "sha256": "53588bc1d3f7a8946204be4b5bc2ee9303b1c0daae2b390a25419733994120ac",
       "bytes": 8728
+    },
+    {
+      "path": "docs/migration/README.md",
+      "sha256": "e700c8488dcf15026f6ff4ebe0fd8503ec34eefbdeb5cdc13f8a13f963b9d3dc",
+      "bytes": 6288
+    },
+    {
+      "path": "docs/migration/environment/platform.json",
+      "sha256": "b083ee5f06a1bdfca0420d21e30d611cc212ac1aab03eee2f4f843f036a28438",
+      "bytes": 771
+    },
+    {
+      "path": "docs/migration/environment/venv-installed.txt",
+      "sha256": "8987f78892ac2f15cc6401d3948f035c3bf3e53259a2d7b6c417999fa54b9c2f",
+      "bytes": 90
+    },
+    {
+      "path": "docs/migration/environment/venv-oak-installed.txt",
+      "sha256": "35b33f9d53cd083bd92fc92808fcb2deacbda177667164256ddbe9c77e6fbb6e",
+      "bytes": 135
+    },
+    {
+      "path": "docs/migration/environment/venv-rtk-installed.txt",
+      "sha256": "5fec977cd768ea1835b7f5b37b4dfe6843c883a8ba9db89d5978f4424eb1f55b",
+      "bytes": 247
+    },
+    {
+      "path": "docs/migration/environment/venv-yolo-installed.txt",
+      "sha256": "849fa30f890e861961d8208f17243648ee8fc5a7c388424de4399a1546ce6e50",
+      "bytes": 1277
+    },
+    {
+      "path": "docs/migration/verify_restored.py",
+      "sha256": "c84c381501db4a9f0e34681a845416ef53b8ce0a381567601109a9c9f0b264db",
+      "bytes": 1438
     },
     {
       "path": "docs/retrospective/2026-09-29/ARCHITECTURE.md",
@@ -1383,5 +1443,6 @@
     "full release hash inventory for locally retained/external assets"
   ],
   "intended_parent_commit": "304ffa75d631df1796137a2e7ffecaa863bcb24f",
-  "publication_visibility": "private"
+  "publication_visibility": "private",
+  "updated_kst": "2026-09-29T15:33:25.134959+09:00"
 }

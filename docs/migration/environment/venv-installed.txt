@@ -1,0 +1,2 @@
+# Observed on 2026-09-29; not a resolved or restored lockfile.
+pyrealsense2==2.58.4.10922
