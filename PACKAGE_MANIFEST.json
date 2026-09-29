@@ -3,7 +3,7 @@
   "purpose": "Post-competition source, learning and migration documentation; partial offline reproducibility, no live vehicle validation.",
   "source_release": "main_event_candidate_20260920_143442",
   "remote_repository": "SEONGBINJEON/HL-FMA-2026",
-  "file_count_excluding_manifest": 285,
+  "file_count_excluding_manifest": 286,
   "files": [
     {
       "path": ".gitignore",
@@ -87,8 +87,8 @@
     },
     {
       "path": "docs/learning/LABS.md",
-      "sha256": "7c7b45ca2d0818309a75cd32abe1a16d0f75a2da391e3e4f5dc0c006faa5e9b9",
-      "bytes": 3254
+      "sha256": "2d3382a3e12a9c3d3307ff9281a79d53e9558acd75f7eaf8a17265223239e22f",
+      "bytes": 3293
     },
     {
       "path": "docs/learning/README.md",
@@ -107,8 +107,13 @@
     },
     {
       "path": "docs/migration/README.md",
-      "sha256": "e700c8488dcf15026f6ff4ebe0fd8503ec34eefbdeb5cdc13f8a13f963b9d3dc",
-      "bytes": 6288
+      "sha256": "e2f26df42cfdc49987905fba84e0888c67d2ba750bbae1b3095a48b7d95bc5df",
+      "bytes": 6425
+    },
+    {
+      "path": "docs/migration/VALIDATION_2026-09-29.md",
+      "sha256": "6a66570ec5eb914f93e3d55c56271f009d42433a8f76b85ad44dcde0d498abb4",
+      "bytes": 2638
     },
     {
       "path": "docs/migration/environment/platform.json",
@@ -1444,5 +1449,5 @@
   ],
   "intended_parent_commit": "304ffa75d631df1796137a2e7ffecaa863bcb24f",
   "publication_visibility": "private",
-  "updated_kst": "2026-09-29T15:33:25.134959+09:00"
+  "updated_kst": "2026-09-29T16:05:05.389308+09:00"
 }

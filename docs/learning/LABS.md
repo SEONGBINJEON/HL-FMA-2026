@@ -41,7 +41,7 @@ python3 docs/analysis/competition_archive_2026-09-29/reproduce_latched_hold.py
 PYTHONPATH=tools python3 -m unittest discover -s tests -p 'test_path_steering_end_progress.py'
 ```
 
-검사 소스부터 읽는다. 왜 종점 근처에 있다는 사실만으로 경로 완료를 선언하지 않는지, 진행 인덱스와 종점 위치가 어떻게 다른지 설명한다. 2026-09-29 원본에서 이 학습용 검사는 exit0을 확인했다. 저장소의 모든 검사 일괄 통과를 의미하지 않는다.
+검사 소스부터 읽는다. 왜 종점 근처에 있다는 사실만으로 경로 완료를 선언하지 않는지, 진행 인덱스와 종점 위치가 어떻게 다른지 설명한다. 2026-09-29 USB에서 복원한 학습 사본에서도 이 학습용 검사3건 통과·exit0을 확인했다. 저장소의 모든 검사 일괄 통과를 의미하지 않는다.
 
 ## 4. Python과 C++의 경계 확인
 
