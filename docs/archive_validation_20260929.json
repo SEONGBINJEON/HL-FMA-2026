@@ -1,0 +1,38 @@
+{
+  "hardware_access": false,
+  "execution_scope": "published copy as cwd",
+  "runs": [
+    {
+      "name": "github_archive_copy_latch",
+      "start_kst": "2026-09-29T15:03:55+09:00",
+      "end_kst": "2026-09-29T15:03:55+09:00",
+      "status": "completed",
+      "exit_code": 0,
+      "argv": [
+        "python3",
+        "docs/analysis/competition_archive_2026-09-29/reproduce_latched_hold.py"
+      ],
+      "source_sha256": {
+        "docs/analysis/competition_archive_2026-09-29/reproduce_latched_hold.py": "1f337e8da05b5ba0832ad2dd9586e675f10029e7d41288d194d90e5ab0ba5107"
+      },
+      "input_kind": "synthetic",
+      "hardware_access_declared": "none"
+    },
+    {
+      "name": "github_archive_copy_build",
+      "start_kst": "2026-09-29T15:03:55+09:00",
+      "end_kst": "2026-09-29T15:03:56+09:00",
+      "status": "completed",
+      "exit_code": 0,
+      "argv": [
+        "bash",
+        "firmware/steer_target/host/build.sh"
+      ],
+      "source_sha256": {
+        "firmware/steer_target/host/build.sh": "cb38a26f392498bdb4b8a13fdc705b4ccdb04649cb060ecc624216c08541d1ec"
+      },
+      "input_kind": "none",
+      "hardware_access_declared": "none"
+    }
+  ]
+}

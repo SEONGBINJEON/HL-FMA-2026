@@ -1,0 +1,407 @@
+{
+  "profile_id": "main_event_20260920_candidate",
+  "map_bundle": "HYPER_main_f8537416",
+  "drive_pwm": 70,
+  "candidate_drive_pwm": 110,
+  "bootstrap_pwm": 70,
+  "signals": {
+    "light_1": [
+      "green"
+    ],
+    "light_2": [
+      "green"
+    ],
+    "light_3": [
+      "green"
+    ]
+  },
+  "signal_basis": "User confirms follow HYPER route on green. HYPER main wait_signal green3frames at light_1/light_3; light_2 main label is orphan, retained as explicit green3 stop in our all-signals sequence. light_3 is left turn along common_2 per user.",
+  "lidar_profile": "config/main_event_lidar_mount.json",
+  "sonar_confirmed_forward_channels": [],
+  "sonar_stop_cm": null,
+  "s_avoidance_verified": false,
+  "reverse_enabled": true,
+  "parking_bypass_approved": false,
+  "finish_rear_wheel_line_confirmed": false,
+  "note": "Section policy: initial/hill/bootstrap/S/parking/approach70, eligible post-hill general100 only with long observed corridor. Existing follower/steering/hillhold unchanged; field validation pending.",
+  "antenna_forward_of_rear_axle_m": 0.315,
+  "front_bumper_forward_of_antenna_m": 0.725,
+  "stop_margin_before_line_m": 0.275,
+  "geometry_basis": "9/17 antenna x315mm, 9/19 user antenna-to-front725mm; rear-axle-to-front derived1.040m. Older axle750+overhang280=1.030m disagreement preserved, not averaged.",
+  "candidate_reference_mode": true,
+  "candidate_basis": "HYPER main routes/mission/green signals reused. S uses existing bounded left/right candidates inside the approximate HYPER aligned aerial pavement reference when a positive obstacle return intersects the upcoming path. Committed detour stays fixed until its endpoint; User-confirmed mission-only LiDAR stopping: fresh local corridor required in S/dummy approach/performance; departure/general/hill/T-P/signal/finish do not stop solely for LiDAR blocked/unknown. PWM100 still requires fresh long-corridor clear. No fabricated surveyed road or global free-space proof. Corrected rule: T/P predeclared autonomous road non-entry penalty routes; general manual passage forbidden. S recovery only after actual collision and judge permission.",
+  "finish_mode": "hyper_reference_goal",
+  "finish_basis": "HYPER mission end_left_end/end_right_end:last. Stop at original route goal; official rear-wheel finish line is not surveyed or claimed confirmed.",
+  "field_verified": false,
+  "parking_reverse_lookahead_m": 3.0,
+  "parking_reverse_basis": "P reverse only: existing adaptive follower base3m plus measured steering-ADC / antenna315mm BODY-course correction. HYPER default p_up preferred among feasible branches. 10Hz ideal-input HYPER loop passed 20260920_072754; no vehicle validation.",
+  "road_boundaries": {
+    "s_curve": {
+      "frame": "map",
+      "verified": false,
+      "basis_kind": "hyper_aerial_reference",
+      "evidence": "HYPER real_course.png + committed real_course.align.yaml; Codex1 visible pavement trace, approximate reference only; not field-surveyed",
+      "polygon": [
+        [
+          -24.944187487969202,
+          -28.86295293551492
+        ],
+        [
+          -20.276414629451395,
+          -28.86295293551492
+        ],
+        [
+          -19.576248700673723,
+          -26.295677863330127
+        ],
+        [
+          -19.69294302213667,
+          -23.961791434071223
+        ],
+        [
+          -20.043025986525507,
+          -21.744599326275267
+        ],
+        [
+          -20.043025986525507,
+          -19.177324254090472
+        ],
+        [
+          -20.859886236766123,
+          -16.376660538979788
+        ],
+        [
+          -22.14352377285852,
+          -13.92607978825794
+        ],
+        [
+          -24.127327237728586,
+          -12.058970644850818
+        ],
+        [
+          -26.69460230991338,
+          -10.658638787295477
+        ],
+        [
+          -29.378571703561118,
+          -9.84177853705486
+        ],
+        [
+          -32.41262406159769,
+          -9.258306929740135
+        ],
+        [
+          -35.32998209817132,
+          -9.725084215591917
+        ],
+        [
+          -37.78056284889317,
+          -9.84177853705486
+        ],
+        [
+          -39.99775495668912,
+          -9.141612608277189
+        ],
+        [
+          -41.51478113570741,
+          -7.624586429258903
+        ],
+        [
+          -42.21494706448509,
+          -5.640782964388835
+        ],
+        [
+          -42.448335707410976,
+          -3.6569794995187683
+        ],
+        [
+          -41.7481697786333,
+          -1.6731760346487006
+        ],
+        [
+          -40.46453224254091,
+          0.07723878729547629
+        ],
+        [
+          -37.89725717035611,
+          1.827653609239654
+        ],
+        [
+          -37.31378556304139,
+          3.344679788257941
+        ],
+        [
+          -40.114449278152065,
+          4.861705967276227
+        ],
+        [
+          -43.265195957651585,
+          4.394928681424447
+        ],
+        [
+          -45.01561077959576,
+          2.761208180943215
+        ],
+        [
+          -46.53263695861405,
+          0.4273217516843122
+        ],
+        [
+          -47.58288585178056,
+          -2.1399533205004815
+        ],
+        [
+          -47.93296881616939,
+          -5.05731135707411
+        ],
+        [
+          -47.58288585178056,
+          -7.507892107795958
+        ],
+        [
+          -46.29924831568816,
+          -9.84177853705486
+        ],
+        [
+          -44.315444850818096,
+          -11.825582001924928
+        ],
+        [
+          -41.51478113570741,
+          -13.342608180943216
+        ],
+        [
+          -38.714117420596736,
+          -14.276162752646776
+        ],
+        [
+          -35.68006506256016,
+          -14.159468431183832
+        ],
+        [
+          -32.76270702598653,
+          -13.342608180943216
+        ],
+        [
+          -29.962043310875842,
+          -13.342608180943216
+        ],
+        [
+          -27.278073917228106,
+          -14.276162752646776
+        ],
+        [
+          -25.294270452358038,
+          -16.026577574590952
+        ],
+        [
+          -24.010632916265642,
+          -18.360464003849856
+        ],
+        [
+          -23.427161308950915,
+          -21.16112771896054
+        ],
+        [
+          -23.893938594802695,
+          -23.728402791145335
+        ],
+        [
+          -24.827493166506258,
+          -26.178983541867183
+        ]
+      ],
+      "source_pixels": [
+        [
+          350,
+          634
+        ],
+        [
+          390,
+          634
+        ],
+        [
+          396,
+          612
+        ],
+        [
+          395,
+          592
+        ],
+        [
+          392,
+          573
+        ],
+        [
+          392,
+          551
+        ],
+        [
+          385,
+          527
+        ],
+        [
+          374,
+          506
+        ],
+        [
+          357,
+          490
+        ],
+        [
+          335,
+          478
+        ],
+        [
+          312,
+          471
+        ],
+        [
+          286,
+          466
+        ],
+        [
+          261,
+          470
+        ],
+        [
+          240,
+          471
+        ],
+        [
+          221,
+          465
+        ],
+        [
+          208,
+          452
+        ],
+        [
+          202,
+          435
+        ],
+        [
+          200,
+          418
+        ],
+        [
+          206,
+          401
+        ],
+        [
+          217,
+          386
+        ],
+        [
+          239,
+          371
+        ],
+        [
+          244,
+          358
+        ],
+        [
+          220,
+          345
+        ],
+        [
+          193,
+          349
+        ],
+        [
+          178,
+          363
+        ],
+        [
+          165,
+          383
+        ],
+        [
+          156,
+          405
+        ],
+        [
+          153,
+          430
+        ],
+        [
+          156,
+          451
+        ],
+        [
+          167,
+          471
+        ],
+        [
+          184,
+          488
+        ],
+        [
+          208,
+          501
+        ],
+        [
+          232,
+          509
+        ],
+        [
+          258,
+          508
+        ],
+        [
+          283,
+          501
+        ],
+        [
+          307,
+          501
+        ],
+        [
+          330,
+          509
+        ],
+        [
+          347,
+          524
+        ],
+        [
+          358,
+          544
+        ],
+        [
+          363,
+          568
+        ],
+        [
+          359,
+          590
+        ],
+        [
+          351,
+          611
+        ]
+      ],
+      "image_size": [
+        1039,
+        864
+      ],
+      "source_sha256": {
+        "real_course.png": "5db256c358f6e8253ee50ba10a3a8d8a89b2357279e4f5d3ff53138e36d4b16a",
+        "real_course.align.yaml": "53d52e11450302c190ce092abbcb9f454a9c52bb2f3f515b2a839695e115a109"
+      },
+      "uncertainty": "Aerial alignment and manual trace accuracy unmeasured. Fresh LiDAR free space and physical envelope remain independently required."
+    }
+  },
+  "manual_passage_user_confirmed": false,
+  "speed_policy": {
+    "cruise_pwm": 100,
+    "cruise_observation_m": 2.4,
+    "approach_low_m": 6.0,
+    "basis": "Three PWM100 practice runs: wire100, GNSS speed median1.21-1.24m/s max1.54; command-stop GNSS bracket <=0.45m, not brake calibration. Design horizon2.4m =1.6m/s*(scan.3+compute.1+gate.4)s+.45m+.67m margin. Approach6m design, 100->70 transient unmeasured. Low first2m after release; retain long observation >=2s after100 until fresh .4s+ GNSS speed<=.95m/s. No physical speed guarantee."
+  },
+  "parking_completion_policy": "preentry_road_passage",
+  "parking_completion_basis": "Latest user correction: T/P manual passage forbidden. Completion-first predeclared non-entry penalty route on HYPER aerial-referenced pavement; no parking entry attempted without independently established automatic escape. Generated passage geometry checked, not field verified.",
+  "manual_recovery_policy": "S_collision_judge_exception_only",
+  "lidar_stop_policy": "S_and_dummy_approach_performance_only",
+  "finish_fallback_lane": "left"
+}

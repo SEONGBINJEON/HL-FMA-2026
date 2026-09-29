@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "purpose": "HL FMA target-steering calibration record. Filled by A1 measurement (user + electrical lead). All values below are UNMEASURED until replaced. tools/steering_calibration.py check validates readiness; the candidate core (firmware/steer_target) cannot produce non-zero output without a valid, measured record.",
+  "status": "blocked_angle_unverified",
+  "synthetic": false,
+  "applied_to_runtime": false,
+  "angle_convention": "wheel_angle_centidegrees_positive_left_FLU (0.01 deg; +900 = 9.00 deg left)",
+  "measurement": {
+    "measured_kst": "2026-09-18 08:19~08:23 (straight, this session) / 2026-09-18 pre-03:41 (electrical team angle points) / 2026-09-18 08:11~08:14 (command sign)",
+    "measured_by": "user (hand alignment and wheel movement) with Claude Code recording; angle points by the electrical team",
+    "method": "Straight: battery OFF, wheel moved by hand at the left front wheel, ruler held against the body, three settled alignments recorded receive-only (tx 0) and segmented from the journal with the approach direction derived from the recorded travel. Angle points: electrical team protractor measurement against a drawn reference line, battery OFF, USB power. Sign: type150 D50 firmware, battery ON, drive PWM 0, two-stick window; DIR latch and pin level agreed on every move.",
+    "connection_wiring_stop_means_checked_kst": "2026-09-18 08:05 user report: vehicle battery OFF, no wiring change beyond the electrical team moving steering DIR from D6 to D50, Mega + controller on the USB hub, vehicle stop switch present (confirmed 9/17-9/18, not re-asked)",
+    "evidence_paths": [
+      "data/straight_ref_d50_20260918_081858/straight_plateau_analysis.json",
+      "data/dir_check_20260918_081108/d50_dir_check_analysis.json",
+      "docs/analysis/steering_team_review_2026-09-18/evidence.json",
+      "data/type150_identify_20260918_080836/metadata.json",
+      "logs/development/20260918_082953_d50_straight_plateau_analysis_v2",
+      "data/type150_identify_20260918_084402_prelive/metadata.json",
+      "data/live_target_20260918_084435/live_target_analysis.json",
+      "data/live_target_20260918_084524_left/live_target_analysis.json"
+    ],
+    "notes": "Straight adc 427 is the median of three body-referenced alignments recorded 08:19-08:23 (403 approached from the right, 427 and 442 approached from the left; within-window stability 1-2 adc, spread 39 adc ~= 2.2 deg). No systematic approach-direction effect appeared this session (the from-right value was the LOWEST, opposite to the ordering seen on 9/18 03:41 and 06:2x), so the spread is alignment repeatability, not hysteresis. Independent corroboration: 426.5 is the adc at which the electrical team's own MR(-17.9 deg, 108) and ML(+15.6 deg, 704) give the same gain on both sides (17.79 adc/deg); their own hand-aligned straights 318/354/370 give strongly asymmetric gains (11.7-14.6 vs 21.4-24.7). Corroboration only: equal gain either side of zero is not guaranteed for a single (left front) wheel under Ackermann geometry. UNRESOLVED: a ~75 adc (~4 deg) offset between this body-referenced straight and the electrical team's floor-line straights; only a straight-driving test can settle which is the vehicle's true 0 deg. Treat the zero as +-20 adc (~1.1 deg) repeatable and possibly biased by a few degrees until then. FOURTH alignment: the user re-aligned the wheel to straight by hand at about 08:41 and the board then read a rock-steady adc 432 over 99 receive-only frames (data/type150_identify_20260918_084402_prelive). The four body-referenced alignments are 403/427/432/442, mean 426, median 429.5; the adopted 427 lies within 3 adc of both, so it was not changed. This fourth value was captured as a start-position check and was not part of the segmented recording. FIRST CLOSED-LOOP RUNS 08:44-08:45 (battery ON, drive PWM 0) settled within 1-16 adc of four commanded targets with no overshoot beyond 2 adc and no hunting, so these bands are conservative: they can be tightened with recorded evidence later. 2026-09-18 14:25 CORRECTION: the '426.5 symmetric gain' corroboration assumes the electrical team's ANGLE ZERO is correct, which is exactly what is now in doubt, so its weight is reduced. A constant angle offset does not change the gain, so the team's 17.79 adc/deg stays usable; only the zero moves. The straight point is a candidate until an actual wheel angle is measured against the rear wheels."
+  },
+  "sensor": {
+    "adc_source": "STEER_ADC A15 read by current type150 firmware, reported in status steering_adc",
+    "steer_command_sign_for_adc_increase": -1,
+    "saturation_observed": false,
+    "electrical_rails_adc": [
+      1,
+      1022
+    ],
+    "saturation_note": "ADC 0 saturation exists at the right physical end (team, 2 attempts; reproduced twice this session) but lies far outside usable_limits.adc_min. No rail is reached inside the usable range."
+  },
+  "points": [
+    {
+      "label": "right_mid",
+      "angle_cdeg": -1790,
+      "adc": 108,
+      "note": "electrical team protractor point MR (median 108, n=31, range 2). Team noted the position was hand-chosen and relatively close to R."
+    },
+    {
+      "label": "straight",
+      "angle_cdeg": 0,
+      "adc": 427,
+      "note": "this session, body-referenced ruler alignment, median of three settled alignments 403/427/442 (fourth 432). **CANDIDATE, NOT VERIFIED AGAINST AN ACTUAL WHEEL ANGLE.** 2026-09-18 14:0x the operator reported the wheel looked strongly right at adc 407, which is only 1.1 deg right of this value; the disagreement is unresolved. Reaching a commanded table adc (proven 08:44) is NOT the same as verifying the wheel angle in degrees (never measured by us). Pending: rear-wheel-referenced protractor measurement at two adc positions. See docs/analysis/steering_reference_gap_2026-09-18/README.md. 2026-09-18 14:52 MEASURED CONTRADICTION: with the left REAR wheel as the reference the left front wheel was measured at 20 deg RIGHT while the board read adc 408, where this table predicts 1.07 deg right — a ~19 deg disagreement. Reference-choice bias (~4 deg) cannot explain it. **DO NOT USE THIS TABLE FOR ANGLE TARGETING UNTIL RESOLVED.** Commanding 0 deg would place the wheel about 19 deg right of true straight. The adc usable limits still bound travel mechanically, but the ANGLE meaning of every point is in question. One pair constrains only the zero; a second pair (step B) is needed to separate an offset shift from a gain change or a slipping sensor coupling. Evidence: data/angle_pair_A_20260918_145206/angle_pair_A.json"
+    },
+    {
+      "label": "left_mid",
+      "angle_cdeg": 1560,
+      "adc": 704,
+      "note": "electrical team protractor point ML (median 704, n=31, range 1)"
+    },
+    {
+      "label": "left_limit",
+      "angle_cdeg": 2900,
+      "adc": 906,
+      "note": "electrical team protractor point L (median 906, n=31), reported as the rack's maximum travel. This session the motor at PWM 60 also stopped at 905-906, but a hand push reached 947-953, so the left end is compliant under force and is NOT a rigid index."
+    }
+  ],
+  "usable_limits": {
+    "adc_min": 280,
+    "adc_max": 620,
+    "basis": "Deliberately conservative outward stops for the first closed-loop trial, well inside the measured table (108..906): 280 ~= -8.3 deg and 620 ~= +10.9 deg by this table. They are a backstop against a sign or sensor fault, not the primary safety measure; the finite hold window, drive PWM 0, the operator and the vehicle stop switch are. Widen only with recorded evidence."
+  },
+  "control": {
+    "stop_band_adc": 25,
+    "restart_band_adc": 60,
+    "sensor_margin_adc": 30,
+    "command_stale_ms": 400,
+    "sensor_stale_ms": 300,
+    "reversal_neutral_ms": 250,
+    "limit_policy": "reject",
+    "basis": "Initial trial settings from this session's measurements, chosen to be stable rather than accurate. Steering travels ~357 adc/s at PWM 60 (446 adc in 1.25 s, data/dir_check_20260918_081108), i.e. ~18 adc per 50 ms status frame, and coasts 8-12 adc after the output is released (three observed releases). stop_band 25 therefore cannot be met more tightly than about one frame of travel, and restart_band 60 exceeds stop_band plus the observed coast so the loop holds instead of hunting. sensor_margin 30 admits a start position just outside the usable band. command_stale 400 ms tolerates a few missed host loops, sensor_stale 300 ms about six missed 50 ms status frames, reversal_neutral 250 ms of zero output before a sign flip on top of the type150 gate's own observed-zero rule. limit_policy 'reject' so an out-of-table target stops and locks instead of being silently clamped. Expect steady-state error up to about 37 adc (~2 deg) with these bands; tighten only after observing real runs.",
+    "confirmed": true
+  },
+  "not_adopted_from_prior_material": [
+    "9/16 observed ADC 94~1023 is a logged range, not a mechanical limit",
+    "peer draft straight ADC 605, 0.043 deg/ADC, left 16 / right 18 deg, 173 count/m are unverified and not adopted",
+    "left/right symmetry and a linear angle-ADC relation are not assumed; the table carries each measured point",
+    "electrical team point R (-20.7 deg, adc 31) is NOT in the table: from MR to R the gain is 27.5 adc/deg while from ML to L it falls to 15.07 adc/deg, so the R angle reading is internally inconsistent with the rest of the table. It lies far outside usable_limits and is not needed.",
+    "electrical team straights F0/F1/F2 (354/318/370) are not adopted as the zero and not averaged with this session's values; the disagreement is recorded, not hidden",
+    "this session's own straight alignments are not averaged with the 06:2x session values (389/423/450) even though both used a body reference"
+  ],
+  "block": {
+    "applied_kst": "2026-09-18T15:12:00+09:00",
+    "applied_by": "Claude 1 per docs/handoff/CLAUDE1_ROLE_SYNC_AND_A_REVIEW_2026-09-18.md item 2",
+    "mechanism": "existing validator rule (tools/steering_calibration.py requires status == 'measured'); no validator change, no new safety system",
+    "reason": "2026-09-18 14:52 step A: left front wheel measured 20 deg RIGHT against the left rear wheel while the board read adc 408, where this table predicts -1.07 deg. The angle meaning of the table is unverified.",
+    "preserved_copy": "data/d50_session_20260918_0806/steering_calibration_candidate_20260918_1452_preblock.json",
+    "values_changed": false,
+    "scope": "blocks tools that validate this record (steering_calibration check, live_steering_trial preflight/--live, steer_target consumers). It does NOT block the manual two-stick program (joystick_desktop/joystick_control), which never reads this file.",
+    "unblock_condition": "actual wheel angle vs adc verified against a vehicle-fixed reference by the electrical team or a Codex-approved measurement; set status back to 'measured' only with that evidence"
+  }
+}

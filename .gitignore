@@ -1,30 +1,29 @@
-# ROS 2
-build/
-install/
-log/
-
-# Python
+# Local secrets and device state
+.env
+.env.*
+*.local.json
+*.pem
+*.key
+# Raw data / environments / private working history
+data/
+logs/
+backups/
+reference/
+HYPER-main/
+EX_Data/
+tmp/
+exports/
+.setup/
+.venv*/
+.codex/
+.agents/
 __pycache__/
 *.pyc
-*.egg-info/
-.venv/
-venv/
-
-# YOLO 학습 결과 (용량 큼 — 별도 공유)
-*.pt
-runs/
-
-# Arduino
-*.hex
+*.so
 *.elf
-
-# 데이터 · 로그
-*.bag
-*.db3
-*.csv
-*.log
-
-# OS / 에디터
-.DS_Store
-.vscode/
-*.swp
+*.hex
+*.bin
+*.pt
+*.onnx
+*.zip
+docs/analysis/**/release_hashes.json

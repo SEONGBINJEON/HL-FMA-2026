@@ -1,0 +1,530 @@
+{
+  "recorded_kst": "2026-09-29T14:38:30.879345+09:00",
+  "hardware_access": false,
+  "credentials_read": false,
+  "session": "data/me_20260920_151234_8ee5d5",
+  "release": {
+    "id": "main_event_candidate_20260920_143442",
+    "manifest_sha256": "fe443810ec9571d98b656d9add10c77afa86995f76c9e9b7d1444ff14131b7a5",
+    "declared_files": 168,
+    "checked_files": 168,
+    "mismatches": [],
+    "missing": [],
+    "excluded": [],
+    "race_ready": false
+  },
+  "event_counts": {
+    "predeparture_parking_policy": 1,
+    "rx": 14483,
+    "tick": 4163,
+    "perception_health": 4,
+    "speed_policy": 91,
+    "tx_attempt": 8973,
+    "tx": 8973,
+    "prestart_parking_route_bound": 1,
+    "session_choices": 1,
+    "startup_sync_confirmed": 1,
+    "status": 8970,
+    "loop_processing_delay": 2180,
+    "serial_late_fragment_crc_valid": 15,
+    "explicit_start": 1,
+    "operator": 984,
+    "bootstrap": 1,
+    "mission_decision": 5,
+    "follow": 846,
+    "nonprogress_watch": 6,
+    "mission_window_advanced": 1,
+    "runtime_exception": 1
+  },
+  "timeline": [
+    {
+      "host_kst": "2026-09-20T15:15:04.741+09:00",
+      "host_monotonic": 218736.160276264,
+      "event": "explicit_start",
+      "boot": 70
+    },
+    {
+      "host_kst": "2026-09-20T15:15:06.903+09:00",
+      "host_monotonic": 218738.322830479,
+      "event": "bootstrap",
+      "moved_m": 1.305370700035316,
+      "scatter_m": 0.026854087852901803,
+      "seconds": 2.028109298000345
+    },
+    {
+      "host_kst": "2026-09-20T15:15:06.904+09:00",
+      "host_monotonic": 218738.324029529,
+      "event": "mission_decision",
+      "drive": true,
+      "reason": "mission_permits",
+      "mission": "hill",
+      "progress": 0,
+      "s_m": 0.7194432225187358,
+      "observed_stop_s": 0.0,
+      "completed": [],
+      "skipped": []
+    },
+    {
+      "host_kst": "2026-09-20T15:15:49.697+09:00",
+      "host_monotonic": 218781.116513926,
+      "event": "mission_decision",
+      "drive": false,
+      "reason": "hill_observed_stop",
+      "mission": "hill",
+      "progress": 48,
+      "s_m": 32.673102052891466,
+      "observed_stop_s": 0.0,
+      "completed": [],
+      "skipped": []
+    },
+    {
+      "host_kst": "2026-09-20T15:15:53.713+09:00",
+      "host_monotonic": 218785.132363562,
+      "event": "nonprogress_watch",
+      "seconds_without_progress": 5.001765399996657,
+      "band": 0,
+      "changed": true,
+      "no_progress_5s": true,
+      "collision_proven": false,
+      "manual_permission_granted": false,
+      "encoder_changed": true,
+      "gps_displacement_m": 0.6188994220978596,
+      "along_route_progress_m": 0.0,
+      "signal_wait": false,
+      "reason": "hill_observed_stop",
+      "alternative": "predeclared_road_passage_for_T_P; other persistent blocks unresolved",
+      "timeout_grants_drive": false
+    },
+    {
+      "host_kst": "2026-09-20T15:15:54.453+09:00",
+      "host_monotonic": 218785.87317915,
+      "event": "mission_window_advanced",
+      "mission_name": "hill",
+      "window_start": 47
+    },
+    {
+      "host_kst": "2026-09-20T15:15:54.454+09:00",
+      "host_monotonic": 218785.873293007,
+      "event": "mission_decision",
+      "drive": true,
+      "reason": "mission_permits",
+      "mission": "light_1",
+      "progress": 48,
+      "s_m": 32.721046769388415,
+      "observed_stop_s": 3.0057104590232484,
+      "completed": [
+        "hill"
+      ],
+      "skipped": []
+    },
+    {
+      "host_kst": "2026-09-20T15:15:54.454+09:00",
+      "host_monotonic": 218785.873936206,
+      "event": "nonprogress_watch",
+      "seconds_without_progress": 0.0,
+      "band": 0,
+      "changed": true,
+      "no_progress_5s": false,
+      "collision_proven": false,
+      "manual_permission_granted": false,
+      "encoder_changed": false,
+      "gps_displacement_m": 0.0,
+      "along_route_progress_m": 0.0,
+      "signal_wait": false,
+      "reason": null,
+      "alternative": "predeclared_road_passage_for_T_P; other persistent blocks unresolved",
+      "timeout_grants_drive": false
+    },
+    {
+      "host_kst": "2026-09-20T15:18:00.483+09:00",
+      "host_monotonic": 218911.902679673,
+      "event": "mission_decision",
+      "drive": false,
+      "reason": "signal_wait:light_1",
+      "mission": "light_1",
+      "progress": 187,
+      "s_m": 138.9521744110634,
+      "observed_stop_s": 0.0,
+      "completed": [
+        "hill"
+      ],
+      "skipped": []
+    },
+    {
+      "host_kst": "2026-09-20T15:18:04.492+09:00",
+      "host_monotonic": 218915.911300672,
+      "event": "nonprogress_watch",
+      "seconds_without_progress": 5.002311745018233,
+      "band": 0,
+      "changed": true,
+      "no_progress_5s": true,
+      "collision_proven": false,
+      "manual_permission_granted": false,
+      "encoder_changed": true,
+      "gps_displacement_m": 1.0495753349092403,
+      "along_route_progress_m": 0.0,
+      "signal_wait": true,
+      "reason": "signal_wait:light_1",
+      "alternative": "predeclared_road_passage_for_T_P; other persistent blocks unresolved",
+      "timeout_grants_drive": false
+    },
+    {
+      "host_kst": "2026-09-20T15:18:07.591+09:00",
+      "host_monotonic": 218919.010971082,
+      "event": "mission_decision",
+      "drive": false,
+      "reason": "pose_recovery_required",
+      "mission": "light_1",
+      "progress": 187,
+      "s_m": 139.05506041519817,
+      "observed_stop_s": 0.2556286269973498,
+      "completed": [
+        "hill"
+      ],
+      "skipped": []
+    },
+    {
+      "host_kst": "2026-09-20T15:18:14.490+09:00",
+      "host_monotonic": 218925.909832069,
+      "event": "nonprogress_watch",
+      "seconds_without_progress": 15.000869492010679,
+      "band": 1,
+      "changed": true,
+      "no_progress_5s": true,
+      "collision_proven": false,
+      "manual_permission_granted": false,
+      "encoder_changed": true,
+      "gps_displacement_m": 1.0666546452446797,
+      "along_route_progress_m": 0.0,
+      "signal_wait": false,
+      "reason": "pose_recovery_required",
+      "alternative": "predeclared_road_passage_for_T_P; other persistent blocks unresolved",
+      "timeout_grants_drive": false
+    },
+    {
+      "host_kst": "2026-09-20T15:18:29.499+09:00",
+      "host_monotonic": 218940.918375798,
+      "event": "nonprogress_watch",
+      "seconds_without_progress": 30.009406030003447,
+      "band": 2,
+      "changed": true,
+      "no_progress_5s": true,
+      "collision_proven": false,
+      "manual_permission_granted": false,
+      "encoder_changed": true,
+      "gps_displacement_m": 1.0666546452446797,
+      "along_route_progress_m": 0.0,
+      "signal_wait": false,
+      "reason": "pose_recovery_required",
+      "alternative": "predeclared_road_passage_for_T_P; other persistent blocks unresolved",
+      "timeout_grants_drive": false
+    },
+    {
+      "host_kst": "2026-09-20T15:18:49.501+09:00",
+      "host_monotonic": 218960.920518387,
+      "event": "nonprogress_watch",
+      "seconds_without_progress": 50.011552920012036,
+      "band": 3,
+      "changed": true,
+      "no_progress_5s": true,
+      "collision_proven": false,
+      "manual_permission_granted": false,
+      "encoder_changed": true,
+      "gps_displacement_m": 1.0666546452446797,
+      "along_route_progress_m": 0.0,
+      "signal_wait": false,
+      "reason": "pose_recovery_required",
+      "alternative": "predeclared_road_passage_for_T_P; other persistent blocks unresolved",
+      "timeout_grants_drive": false
+    },
+    {
+      "host_kst": "2026-09-20T15:20:11.116+09:00",
+      "host_monotonic": 219042.53575852,
+      "event": "runtime_exception",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/jeonseongbin/HL FMA v2/tools/main_event_runtime.py\", line 495, in run\n    _,dist,err=q.select_entry(stage_points,[align_index],travel.as_route_pose(),args.max_lateral_error_m,args.run_heading_deg)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/jeonseongbin/HL FMA v2/tools/qualifier_follow.py\", line 218, in select_entry\n    if not cands:raise ValueError('no allowed entry segment within distance/heading; place the vehicle at the course entry or use --resume-index')\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: no allowed entry segment within distance/heading; place the vehicle at the course entry or use --resume-index\n",
+      "progress": 187,
+      "body_heading_rad": -1.997488902517883,
+      "heading_anchor_at": 1789885083.089,
+      "measured_heading_curvature": null,
+      "section": "start"
+    }
+  ],
+  "board_near_lock": {
+    "2026-09-20T15:18:00": {
+      "encoder_min": 63409,
+      "encoder_max": 63507,
+      "commands": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          70
+        ]
+      ]
+    },
+    "2026-09-20T15:18:01": {
+      "encoder_min": 63502,
+      "encoder_max": 63507,
+      "commands": [
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "2026-09-20T15:18:02": {
+      "encoder_min": 63497,
+      "encoder_max": 63502,
+      "commands": [
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "2026-09-20T15:18:03": {
+      "encoder_min": 63492,
+      "encoder_max": 63497,
+      "commands": [
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "2026-09-20T15:18:04": {
+      "encoder_min": 63483,
+      "encoder_max": 63491,
+      "commands": [
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "2026-09-20T15:18:05": {
+      "encoder_min": 63477,
+      "encoder_max": 63482,
+      "commands": [
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "2026-09-20T15:18:06": {
+      "encoder_min": 63473,
+      "encoder_max": 63477,
+      "commands": [
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "2026-09-20T15:18:07": {
+      "encoder_min": 63474,
+      "encoder_max": 63477,
+      "commands": [
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "2026-09-20T15:18:08": {
+      "encoder_min": 63477,
+      "encoder_max": 63483,
+      "commands": [
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "2026-09-20T15:18:09": {
+      "encoder_min": 63483,
+      "encoder_max": 63494,
+      "commands": [
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "2026-09-20T15:18:10": {
+      "encoder_min": 63493,
+      "encoder_max": 63494,
+      "commands": [
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "2026-09-20T15:18:11": {
+      "encoder_min": 63493,
+      "encoder_max": 63493,
+      "commands": [
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "2026-09-20T15:18:12": {
+      "encoder_min": 63493,
+      "encoder_max": 63493,
+      "commands": [
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  "gga_near_lock": {
+    "count": 45,
+    "status_counts": {
+      "rtk_fixed": 45
+    },
+    "max_interval_s": 0.2239999771118164
+  },
+  "selected_frames": [
+    {
+      "source": "9b8b129192fb4d1aa0a490e36dab63d6",
+      "frame_id": 3210,
+      "file": "9b8b129192fb4d1aa0a490e36dab63d6_3210.jpg",
+      "capture_at": 218911.893849388,
+      "published_at": 218912.032733298,
+      "time_basis": "depthai_host_synced_timestamp",
+      "input_kind": "live",
+      "receipt_age_s": 0.126594,
+      "jpeg_s": 0.012280804017791525,
+      "path": "data/me_20260920_151234_8ee5d5/frames/9b8b129192fb4d1aa0a490e36dab63d6_3210.jpg",
+      "sha256": "9bef933a4c1f8ad952a532205512e00f3a5a845cbb49495a65c9ec36e1899109",
+      "review_note": "initial_signal_wait_red_visually_observed"
+    },
+    {
+      "source": "9b8b129192fb4d1aa0a490e36dab63d6",
+      "frame_id": 3281,
+      "file": "9b8b129192fb4d1aa0a490e36dab63d6_3281.jpg",
+      "capture_at": 218919.00520734402,
+      "published_at": 218919.137206119,
+      "time_basis": "depthai_host_synced_timestamp",
+      "input_kind": "live",
+      "receipt_age_s": 0.122575,
+      "jpeg_s": 0.009412891988176852,
+      "path": "data/me_20260920_151234_8ee5d5/frames/9b8b129192fb4d1aa0a490e36dab63d6_3281.jpg",
+      "sha256": "a35b02de1455e45ed54039cf0af30a298fa68cd32ee8a27ed26c1f3e776b0409",
+      "review_note": "recovery_latch_red_visually_observed"
+    },
+    {
+      "source": "9b8b129192fb4d1aa0a490e36dab63d6",
+      "frame_id": 3501,
+      "file": "9b8b129192fb4d1aa0a490e36dab63d6_3501.jpg",
+      "capture_at": 218941.039872126,
+      "published_at": 218941.174888851,
+      "time_basis": "depthai_host_synced_timestamp",
+      "input_kind": "live",
+      "receipt_age_s": 0.123662,
+      "jpeg_s": 0.011344041005941108,
+      "path": "data/me_20260920_151234_8ee5d5/frames/9b8b129192fb4d1aa0a490e36dab63d6_3501.jpg",
+      "sha256": "f26f21c6538a7c190c80df8b0f48f812a22adad8e332522baf7f26e25b7b79c6",
+      "review_note": "about_30s_after_stop_red_visually_observed"
+    },
+    {
+      "source": "9b8b129192fb4d1aa0a490e36dab63d6",
+      "frame_id": 3810,
+      "file": "9b8b129192fb4d1aa0a490e36dab63d6_3810.jpg",
+      "capture_at": 218971.98860732,
+      "published_at": 218972.116397449,
+      "time_basis": "depthai_host_synced_timestamp",
+      "input_kind": "live",
+      "receipt_age_s": 0.120493,
+      "jpeg_s": 0.0072856460174079984,
+      "path": "data/me_20260920_151234_8ee5d5/frames/9b8b129192fb4d1aa0a490e36dab63d6_3810.jpg",
+      "sha256": "001dbf7fa9816c42411999c6bb0b824e5b808d4190b383f76df7d9416a7b07a4",
+      "review_note": "about_60s_after_stop_green_visually_observed"
+    }
+  ],
+  "final_state": {
+    "phase": "stopped",
+    "reason": "ValueError: no allowed entry segment within distance/heading; place the vehicle at the course entry or use --resume-index",
+    "fault": null,
+    "completed": [
+      "hill"
+    ],
+    "index": 1,
+    "progress": 187,
+    "exit_code": 1,
+    "ended_utc": "2026-09-20T06:20:14.925332+00:00",
+    "stop_ack": true,
+    "stationary_observed": true,
+    "process_released": true
+  },
+  "folder_inventory": {
+    "tools": {
+      "file_count": 204,
+      "bytes": 2811016
+    },
+    "tests": {
+      "file_count": 147,
+      "bytes": 1776910
+    },
+    "scripts": {
+      "file_count": 11,
+      "bytes": 13080
+    },
+    "firmware": {
+      "file_count": 197,
+      "bytes": 5208168
+    },
+    "docs": {
+      "file_count": 934,
+      "bytes": 78695886
+    },
+    "data": {
+      "file_count": 49753,
+      "bytes": 35108732789
+    },
+    "logs": {
+      "file_count": 1837,
+      "bytes": 3456100
+    },
+    "backups": {
+      "file_count": 2030,
+      "bytes": 412997615
+    },
+    "reference": {
+      "file_count": 472,
+      "bytes": 57559307
+    },
+    "EX_Data": {
+      "file_count": 392,
+      "bytes": 984561571
+    }
+  },
+  "limitations": [
+    "No historical per-frame inference ledger was found; signal.json is the final overwritten result.",
+    "The exact runtime held anchor and recovery_cause were not logged at the transition.",
+    "GNSS log receipt continuity does not itself prove each runtime poll had fresh data.",
+    "Visual green in a saved frame does not prove three accepted green votes."
+  ]
+}

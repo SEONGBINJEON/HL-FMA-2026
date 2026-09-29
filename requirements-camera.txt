@@ -1,0 +1,3 @@
+# Official librealsense Python SDK, verified Linux x86_64 / Python 3.12 wheel.
+pyrealsense2==2.58.4.10922
+

@@ -1,0 +1,1387 @@
+{
+  "created_kst": "2026-09-29T15:00:45.591457+09:00",
+  "purpose": "Post-competition source and documentation archive; partial offline reproducibility, no live vehicle validation.",
+  "source_release": "main_event_candidate_20260920_143442",
+  "remote_repository": "SEONGBINJEON/HL-FMA-2026",
+  "file_count_excluding_manifest": 273,
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "0d2f1d2fbd6a2b53b2b5fd5aa65f436f1b0f388c9e3ce0d86ad0dc0d3c6ec434",
+      "bytes": 319
+    },
+    {
+      "path": "README.md",
+      "sha256": "b14a23962aaaf793bfea6d198bd697e7dab2810c8d279b22d5beefc320ace9c1",
+      "bytes": 3416
+    },
+    {
+      "path": "config/main_event.json",
+      "sha256": "a7db7513eaa913ca7fb693974cc951f484258ac494b440ae5372a87bf7daf940",
+      "bytes": 10058
+    },
+    {
+      "path": "config/main_event_lidar_mount.json",
+      "sha256": "638fda1397e88ed3fa82f2f96faf7bbedbb2f2d9d09080aab55bcf0bcce0ac94",
+      "bytes": 2080
+    },
+    {
+      "path": "config/main_event_s_reference_boundary.json",
+      "sha256": "ecbdea79cad066051c644083f7e2f64044e84bb6f117cba81304782f83684a73",
+      "bytes": 4835
+    },
+    {
+      "path": "config/steering_calibration.json",
+      "sha256": "456494941e56d02bf4bdb9e9df94843ae2ec806d9c4079347d0292aa543685ee",
+      "bytes": 10924
+    },
+    {
+      "path": "docs/REPRODUCIBILITY.md",
+      "sha256": "d5a5603531c8c985ded7226b8fa14860468ebf1598164b327c715b27c29ff7c8",
+      "bytes": 2632
+    },
+    {
+      "path": "docs/THIRD_PARTY.md",
+      "sha256": "fdb7719eba378ddddb4e7ffde7821675f78be2ac38eaee2316c621e527d07c78",
+      "bytes": 1474
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "sha256": "0694ea10dd4c1e54c7509a6365b8f76958c823efbe8577cd82b50c11b746749e",
+      "bytes": 929
+    },
+    {
+      "path": "docs/analysis/competition_archive_2026-09-29/audit.py",
+      "sha256": "7dc554db26ef15b4ac2b68f0c01f3ad351bb0fa83e2f551692bb184aca26ea48",
+      "bytes": 5876
+    },
+    {
+      "path": "docs/analysis/competition_archive_2026-09-29/evidence.json",
+      "sha256": "c1ad6cf1cdfcab8ebd57a10f80a18baf0bb3a6c9b0bcfbef8d9aef6ad0c19f95",
+      "bytes": 15293
+    },
+    {
+      "path": "docs/analysis/competition_archive_2026-09-29/latch_reproduction.json",
+      "sha256": "9685d3033bdf8fc4411aaa0302d9d03cbda7acbc43b8e58b85dc606ea8131ebb",
+      "bytes": 4476
+    },
+    {
+      "path": "docs/analysis/competition_archive_2026-09-29/reproduce_latched_hold.py",
+      "sha256": "1f337e8da05b5ba0832ad2dd9586e675f10029e7d41288d194d90e5ab0ba5107",
+      "bytes": 2566
+    },
+    {
+      "path": "docs/archive_validation_20260929.json",
+      "sha256": "6864c8993df022446c19c3b26f0db14fdd51562054f6798647666eb1e597bb84",
+      "bytes": 1181
+    },
+    {
+      "path": "docs/manual_protocol_v1.md",
+      "sha256": "53588bc1d3f7a8946204be4b5bc2ee9303b1c0daae2b390a25419733994120ac",
+      "bytes": 8728
+    },
+    {
+      "path": "docs/retrospective/2026-09-29/ARCHITECTURE.md",
+      "sha256": "fc779b7b04f2d15233c0f17fc1f43255cf4994a2919c5226ab63b956f21abd9c",
+      "bytes": 3387
+    },
+    {
+      "path": "docs/retrospective/2026-09-29/EVIDENCE_INDEX.md",
+      "sha256": "9335c60780ee1b380dc165884b6facdd354464d029aa439e2d89913d5f7bfa99",
+      "bytes": 2578
+    },
+    {
+      "path": "docs/retrospective/2026-09-29/GITHUB_MIGRATION_PLAN.md",
+      "sha256": "d811607137b588cc64d723ddf893c756d09a10199c8451015181424872efed5a",
+      "bytes": 3850
+    },
+    {
+      "path": "docs/retrospective/2026-09-29/LIGHT1_FAILURE.md",
+      "sha256": "918558fff5663c438dbdfcd48a47ac58d3229ebad36536487fe9e92974587d7d",
+      "bytes": 5895
+    },
+    {
+      "path": "docs/retrospective/2026-09-29/README.md",
+      "sha256": "19477494d2b24fbdb7a485b1a95c1faee40137668a7f61fdfd408ff206cd4522",
+      "bytes": 3398
+    },
+    {
+      "path": "docs/retrospective/2026-09-29/TIMELINE.md",
+      "sha256": "65500554ce17a9785df5de2994bae99191cde13f6bb627380e4bf2a21af4bc4d",
+      "bytes": 4635
+    },
+    {
+      "path": "firmware/front_pulse/README.md",
+      "sha256": "2aa1e31fcceb53374280ee45269fd8c117a2310d296f7c0b315c9df6be729961",
+      "bytes": 3360
+    },
+    {
+      "path": "firmware/front_pulse/control_core.cpp",
+      "sha256": "be4f7fc436dfdf57e6d3bda6d0563b2d690926a7be95028e8d4ad6d8e0bcbc6d",
+      "bytes": 10711
+    },
+    {
+      "path": "firmware/front_pulse/control_core.h",
+      "sha256": "2aba4699cc2184618551e69c8ace943c51d043e92ff87a87e25265a7f60d0b14",
+      "bytes": 3338
+    },
+    {
+      "path": "firmware/front_pulse/front_pulse.ino",
+      "sha256": "bd0bf5dde8ac52cc124829cd25e6fe07ba6440377165f507410bf6f2a91852e4",
+      "bytes": 4985
+    },
+    {
+      "path": "firmware/front_pulse/pulse_gate.h",
+      "sha256": "8306cc8fefb4f4d666dd1d1c9e33b7e4b916ca767cfcb62cd537a10e6fa4e308",
+      "bytes": 1385
+    },
+    {
+      "path": "firmware/front_pulse/tests/pulse_gate_test.cpp",
+      "sha256": "90b8743f678f912503809e9cce07e171f48d12a8489613b2b4e70e98815c74ca",
+      "bytes": 3804
+    },
+    {
+      "path": "firmware/front_pulse/tests/run_tests.sh",
+      "sha256": "9132d18a1aef85c82f423acc559c9a3162398d93df5f04195f94f77d176c4279",
+      "bytes": 477
+    },
+    {
+      "path": "firmware/joystick_manual/README.md",
+      "sha256": "e78afee94154c35c58e1209ce91ab1902d0d77a01e78340674effe77788ebd1b",
+      "bytes": 4873
+    },
+    {
+      "path": "firmware/joystick_manual/control_core.cpp",
+      "sha256": "8a4c083db054b8c0133fc216b6a6f3bbf99abfc05e00a64799de75ff7c44ab4d",
+      "bytes": 10758
+    },
+    {
+      "path": "firmware/joystick_manual/control_core.h",
+      "sha256": "c6ad1f541cf99e3cd69ca378e3efabcec96e4d4e7a41faada709fe7664725174",
+      "bytes": 3323
+    },
+    {
+      "path": "firmware/joystick_manual/joystick_manual.ino",
+      "sha256": "bcdf895b6915427b428ac53b1c5441f81603d6a232490d06794c05a35849429c",
+      "bytes": 10598
+    },
+    {
+      "path": "firmware/joystick_manual/step_gate.h",
+      "sha256": "b5ad9583d710d249e787dc3cf7ab4cc663c10f8520828e1c5fdff3696a19843b",
+      "bytes": 2929
+    },
+    {
+      "path": "firmware/joystick_manual/tests/check_pin_map.py",
+      "sha256": "9798cc7a0152837c0c856a94f0ec2c8c3976d7892c724d852c56e7ce807005a5",
+      "bytes": 4113
+    },
+    {
+      "path": "firmware/joystick_manual/tests/joystick_gate_test.cpp",
+      "sha256": "9ebe65621c9519397339e3c40eebddbcece4760452d2989458f51cdd3fc31489",
+      "bytes": 6411
+    },
+    {
+      "path": "firmware/joystick_ultrasonic_pinfix_draft/README.md",
+      "sha256": "8638cb474758b70144bfa1bdbc115bd5cc90e728237c8f42e25772434436ffd0",
+      "bytes": 1359
+    },
+    {
+      "path": "firmware/joystick_ultrasonic_pinfix_draft/joystick_ultrasonic_pinfix_draft.ino",
+      "sha256": "f42695b2deed1592f3ce080e4ab8840536686a735eb8697d8716f9ed9f37aff0",
+      "bytes": 16324
+    },
+    {
+      "path": "firmware/original_compile_check/original_compile_check.ino",
+      "sha256": "67646fec0ea58cacfa7f5be05459841b2a46b4b6ff1ff3aa0468bda2585e77b2",
+      "bytes": 12753
+    },
+    {
+      "path": "firmware/rear_pulse/README.md",
+      "sha256": "0ec83c11c9e58287b41e3a92bb2a58ae52455e8439054ba8872637a1a6ebe8db",
+      "bytes": 926
+    },
+    {
+      "path": "firmware/rear_pulse/control_core.cpp",
+      "sha256": "be4f7fc436dfdf57e6d3bda6d0563b2d690926a7be95028e8d4ad6d8e0bcbc6d",
+      "bytes": 10711
+    },
+    {
+      "path": "firmware/rear_pulse/control_core.h",
+      "sha256": "2aba4699cc2184618551e69c8ace943c51d043e92ff87a87e25265a7f60d0b14",
+      "bytes": 3338
+    },
+    {
+      "path": "firmware/rear_pulse/pulse_gate.h",
+      "sha256": "8306cc8fefb4f4d666dd1d1c9e33b7e4b916ca767cfcb62cd537a10e6fa4e308",
+      "bytes": 1385
+    },
+    {
+      "path": "firmware/rear_pulse/rear_pulse.ino",
+      "sha256": "39d304c1b3c01b277289922596b99d499751f3aa11429d03fc2da57397c69a69",
+      "bytes": 5018
+    },
+    {
+      "path": "firmware/rear_pulse/tests/pulse_gate_test.cpp",
+      "sha256": "90b8743f678f912503809e9cce07e171f48d12a8489613b2b4e70e98815c74ca",
+      "bytes": 3804
+    },
+    {
+      "path": "firmware/rear_pulse/tests/run_tests.sh",
+      "sha256": "9132d18a1aef85c82f423acc559c9a3162398d93df5f04195f94f77d176c4279",
+      "bytes": 477
+    },
+    {
+      "path": "firmware/safe_manual/README.md",
+      "sha256": "b8f6e7d480a176c20d6e40c4ce7d94d275a62d0a520577f21efbdce7b52c26ee",
+      "bytes": 3897
+    },
+    {
+      "path": "firmware/safe_manual/control_core.cpp",
+      "sha256": "be4f7fc436dfdf57e6d3bda6d0563b2d690926a7be95028e8d4ad6d8e0bcbc6d",
+      "bytes": 10711
+    },
+    {
+      "path": "firmware/safe_manual/control_core.h",
+      "sha256": "2aba4699cc2184618551e69c8ace943c51d043e92ff87a87e25265a7f60d0b14",
+      "bytes": 3338
+    },
+    {
+      "path": "firmware/safe_manual/safe_manual.ino",
+      "sha256": "ea81b620be3362d80afb757dec40757f976accca29e39e059e0206d22ac74842",
+      "bytes": 4377
+    },
+    {
+      "path": "firmware/steer_pulse/README.md",
+      "sha256": "05e932e0958f1fcfb1c027d544310fd401d12065391ba045e422bc706c8f9738",
+      "bytes": 1085
+    },
+    {
+      "path": "firmware/steer_pulse/control_core.cpp",
+      "sha256": "be4f7fc436dfdf57e6d3bda6d0563b2d690926a7be95028e8d4ad6d8e0bcbc6d",
+      "bytes": 10711
+    },
+    {
+      "path": "firmware/steer_pulse/control_core.h",
+      "sha256": "2aba4699cc2184618551e69c8ace943c51d043e92ff87a87e25265a7f60d0b14",
+      "bytes": 3338
+    },
+    {
+      "path": "firmware/steer_pulse/pulse_gate.h",
+      "sha256": "5a4dfa3d0c14af78e2e05194bfe70d02adb7f6655d662a62f91d7058aaebbd0a",
+      "bytes": 1627
+    },
+    {
+      "path": "firmware/steer_pulse/steer_pulse.ino",
+      "sha256": "b3e324c25d7b7763a50273555aa47ee383d98720eb974ea04cc4a4099516595b",
+      "bytes": 5094
+    },
+    {
+      "path": "firmware/steer_pulse/tests/pulse_gate_test.cpp",
+      "sha256": "6e68f0218f67964936816c063d89434ebd1d65c67d19f82203c53212f2153d8d",
+      "bytes": 3278
+    },
+    {
+      "path": "firmware/steer_pulse/tests/run_tests.sh",
+      "sha256": "0ac15120244c8a6339ccc56f9f74fd8c48b3e65a70fedd56bc7f0f902b866534",
+      "bytes": 477
+    },
+    {
+      "path": "firmware/steer_right_pulse/README.md",
+      "sha256": "873d0551e701ed8e021eeb5d258af72abe58dbe45b8de56d3a140aabec870ce1",
+      "bytes": 1882
+    },
+    {
+      "path": "firmware/steer_right_pulse/control_core.cpp",
+      "sha256": "be4f7fc436dfdf57e6d3bda6d0563b2d690926a7be95028e8d4ad6d8e0bcbc6d",
+      "bytes": 10711
+    },
+    {
+      "path": "firmware/steer_right_pulse/control_core.h",
+      "sha256": "2aba4699cc2184618551e69c8ace943c51d043e92ff87a87e25265a7f60d0b14",
+      "bytes": 3338
+    },
+    {
+      "path": "firmware/steer_right_pulse/pulse_gate.h",
+      "sha256": "e7ea39383622439d5406021735a3804bb622f54789ca3042fc7159e3e887954c",
+      "bytes": 1638
+    },
+    {
+      "path": "firmware/steer_right_pulse/steer_right_pulse.ino",
+      "sha256": "fd57b680ce4d8bfc0f0defbcf35c170b79e1209ee3dc8e850b78fa7d71182487",
+      "bytes": 5073
+    },
+    {
+      "path": "firmware/steer_right_pulse/tests/pulse_gate_test.cpp",
+      "sha256": "56438ccb3bd16911aac8daf5ac436f2ca2c21e0ccb1ccaf72c71535983f4ab40",
+      "bytes": 3860
+    },
+    {
+      "path": "firmware/steer_right_pulse/tests/run_tests.sh",
+      "sha256": "0ac15120244c8a6339ccc56f9f74fd8c48b3e65a70fedd56bc7f0f902b866534",
+      "bytes": 477
+    },
+    {
+      "path": "firmware/steer_target/README.md",
+      "sha256": "7b4c6bc6c0147a164fb26853c872b6e34bf95a327cf21e53a494225444a0c3be",
+      "bytes": 7364
+    },
+    {
+      "path": "firmware/steer_target/host/build.sh",
+      "sha256": "cb38a26f392498bdb4b8a13fdc705b4ccdb04649cb060ecc624216c08541d1ec",
+      "bytes": 1396
+    },
+    {
+      "path": "firmware/steer_target/host/steer_host_cabi.cpp",
+      "sha256": "2591c68bc80e2c3794d264a6a4e8c633990daf607d042388cdfd6d6b3179ea4d",
+      "bytes": 6736
+    },
+    {
+      "path": "firmware/steer_target/steer_target_core.cpp",
+      "sha256": "3bf5d53a5939ee87d4370cf9c2306fba59b02a3f3b2ef265e87702da239eb2b3",
+      "bytes": 8994
+    },
+    {
+      "path": "firmware/steer_target/steer_target_core.h",
+      "sha256": "8cec120b4ba4aaf09e58c7cbc8b4a9511488c449723baf87101f13fa010fe102",
+      "bytes": 5645
+    },
+    {
+      "path": "firmware/steer_target/tests/run.sh",
+      "sha256": "5049057b6600fdd3dab800948359d7584a0cf0561631f53f98c6214e0a3bd80a",
+      "bytes": 985
+    },
+    {
+      "path": "firmware/steer_target/tests/steer_target_test.cpp",
+      "sha256": "724694a1a39931f078c8cf4f45f700210b4eb7da3cc66b3998a7be8985a5b8b5",
+      "bytes": 19611
+    },
+    {
+      "path": "firmware/step_manual/README.md",
+      "sha256": "dc75175c250a535d4d590db515bdb7b7055fc60926a183a8b1421561e8a1c34c",
+      "bytes": 1790
+    },
+    {
+      "path": "firmware/step_manual/control_core.cpp",
+      "sha256": "992308feda971e477a69568136352b76c470dbe5e81b62b81524d38bd8cc8aa8",
+      "bytes": 10638
+    },
+    {
+      "path": "firmware/step_manual/control_core.h",
+      "sha256": "e5e9d3970179290d9cd1704b52390e40aeabcfa57ebc1496f865cd9b97fc69e1",
+      "bytes": 3251
+    },
+    {
+      "path": "firmware/step_manual/step_gate.h",
+      "sha256": "65b2b5f4dabeb72bffe0aff281ea78b62a1b2284dac14a4706e69a4ae71b5067",
+      "bytes": 3496
+    },
+    {
+      "path": "firmware/step_manual/step_manual.ino",
+      "sha256": "c22e2fb8286e51521d091f518f91d744f337517b98632a0c36d499726a2a75b7",
+      "bytes": 5757
+    },
+    {
+      "path": "firmware/step_manual/tests/run_tests.sh",
+      "sha256": "8b628ec9865968e4801b6d1bf671418e80188472d85cd1f9db83e6b52503dd9d",
+      "bytes": 467
+    },
+    {
+      "path": "firmware/step_manual/tests/step_gate_test.cpp",
+      "sha256": "b6f88c3084ab6326f00727bdb81a030ad1dc3657e332e3e36c5795a9488f1ac8",
+      "bytes": 4963
+    },
+    {
+      "path": "requirements-camera.txt",
+      "sha256": "00d2310ad3f53168a4d186e9382d2f760c12446d82022e12840c0a17ac4c609a",
+      "bytes": 107
+    },
+    {
+      "path": "requirements-oak.txt",
+      "sha256": "53700c345a268d4e05bd8183b0f4e370faeb636fb9c587419e894e39c17199e4",
+      "bytes": 62
+    },
+    {
+      "path": "requirements-rtk.txt",
+      "sha256": "6109033eeb12d9634eba6c8f9fd3479b20435e293b6f39dc1368e07faf8d8b36",
+      "bytes": 19
+    },
+    {
+      "path": "scripts/a1_check_ports.sh",
+      "sha256": "348aec1cb975d02c968b4c57691742bc2868415b3145b23ffa2d655028f94a80",
+      "bytes": 1979
+    },
+    {
+      "path": "scripts/install_ros_jazzy.sh",
+      "sha256": "7a15d2a2c5d102ef00978d4d5caaee9563143d3b8e7a280e9c20f52492d3530c",
+      "bytes": 4936
+    },
+    {
+      "path": "scripts/practice_data.sh",
+      "sha256": "6884d20d2de0c61d04ba2e7d28b92e2ab40f47e165d1d5021b95677d779e844f",
+      "bytes": 2258
+    },
+    {
+      "path": "scripts/record_field_session.sh",
+      "sha256": "a1f581f8b7c6f9eb6d98b9c92495d3d8399b5afe3b343d8d76696800777dedb8",
+      "bytes": 791
+    },
+    {
+      "path": "scripts/record_gnss.sh",
+      "sha256": "bef0fb2908fb7414051e4eab64d4eec26d394eb98c498a0c7e7df2fc978bb934",
+      "bytes": 245
+    },
+    {
+      "path": "scripts/record_gps_walk.sh",
+      "sha256": "08b39dca46ee6835ee0dea4337024117eeaa649ff2754bd2e6473ccd0bf33a51",
+      "bytes": 497
+    },
+    {
+      "path": "scripts/record_rtk.sh",
+      "sha256": "7347ce8b5cb63ddc40fe401859f8cba9e796a3d4d2033087d85896adfdc040e2",
+      "bytes": 329
+    },
+    {
+      "path": "scripts/setup_oak_permissions.sh",
+      "sha256": "125330fc217f28974f2aba38990e6864f78580a79e824c9be39c628caacf1e54",
+      "bytes": 832
+    },
+    {
+      "path": "scripts/start_manual_bench.sh",
+      "sha256": "29f532eb6a01c851bb378f0e8175667531fd46d53dd5f8dccd0ab6d695bb7838",
+      "bytes": 376
+    },
+    {
+      "path": "scripts/start_step_manual.sh",
+      "sha256": "03452f7657e76797a3a5568d14695b96f9a35dbe2278867c269ced908cc93202",
+      "bytes": 451
+    },
+    {
+      "path": "scripts/use_ros.sh",
+      "sha256": "06d0561fca99ebe454b9a4ef0a33546521a8fd480d3abe842ed9900bfbb8789e",
+      "bytes": 386
+    },
+    {
+      "path": "tests/run_manual_core_tests.sh",
+      "sha256": "098d6e9b72bdf83297187feba7137162c43bea0882240b8a90bcd33d5c31c43b",
+      "bytes": 530
+    },
+    {
+      "path": "tests/test_a1_steering_record.py",
+      "sha256": "dbc48099010281185c050b261c340c1807082d3cc2910d2431afd6efc4d3068d",
+      "bytes": 8107
+    },
+    {
+      "path": "tests/test_c5_contract_review.py",
+      "sha256": "f32b9e73184fcc490080074e5b5fd3788cfded7215f3740c169c4ff5231d120f",
+      "bytes": 3536
+    },
+    {
+      "path": "tests/test_c5_integration.py",
+      "sha256": "e12f4c060cd23e5f19e4116f7ae341b3e7e68f13d4ae09200c7330e81d8bb41c",
+      "bytes": 10161
+    },
+    {
+      "path": "tests/test_camera_check_recording.py",
+      "sha256": "ec8e8b07eea49aa3bc6f43c4af97cd31c05ca74de0ce49f55c1d93eb8c9691ee",
+      "bytes": 6053
+    },
+    {
+      "path": "tests/test_camera_record.py",
+      "sha256": "82a8513e62aa454a1dd01a4da0d7e8e60d0fdb02ef35d010f9aab49ef088f28c",
+      "bytes": 10358
+    },
+    {
+      "path": "tests/test_check_devices.py",
+      "sha256": "88cb2c935163a3f8ee134cf493a0b112d1a72d5556b085d0e737dc6a8465593c",
+      "bytes": 4850
+    },
+    {
+      "path": "tests/test_claude_workspace_job.py",
+      "sha256": "cb7389d61d4245c823d64a69f2159ca5a0e7652ccb54c5521cef55101a3eb4af",
+      "bytes": 1878
+    },
+    {
+      "path": "tests/test_configure_ntrip.py",
+      "sha256": "e8b9a2dc5aedd9f060c5fa3d3a46c44673722c4aca1c11670c9bc6a5fbb6676a",
+      "bytes": 2324
+    },
+    {
+      "path": "tests/test_dev_run_log.py",
+      "sha256": "26aa969b2126f44b1b9071fc2ec60c6d70d48a3e4b470e46af1ffb227df69033",
+      "bytes": 3513
+    },
+    {
+      "path": "tests/test_export_conversation_archive.py",
+      "sha256": "c8fa6d4651b442bc6fecb5c6bba4a06f916ab59249b410c763c698a3ff0a608e",
+      "bytes": 3672
+    },
+    {
+      "path": "tests/test_front_pulse_test.py",
+      "sha256": "aeb8169d332a2333b7c21c1d2b0b8efeb006565d72304b453b682ba1e8c8adb6",
+      "bytes": 7519
+    },
+    {
+      "path": "tests/test_full_table_follow_caps.py",
+      "sha256": "0f91d782775828828b1a1f5a80d1bbc82edbcfef3aaa79bb41d34184a1469646",
+      "bytes": 3597
+    },
+    {
+      "path": "tests/test_gnss_analyze.py",
+      "sha256": "bf7f4139d1a9bb4d8f5e26596b2427106bba5374f627d398718a64118f7c13c7",
+      "bytes": 2859
+    },
+    {
+      "path": "tests/test_gnss_diagnostics.py",
+      "sha256": "e1df54e247e672bdf7141a8ac8146bf9cd067f8c292fcf9f02e38930df65849f",
+      "bytes": 6146
+    },
+    {
+      "path": "tests/test_gnss_record.py",
+      "sha256": "de43ab051c211239328101ace0c93e8a436661bd0c6537202303dee32d5a3772",
+      "bytes": 12249
+    },
+    {
+      "path": "tests/test_imu_power_record.py",
+      "sha256": "c36ec7a7b862d3b5e8d07dfe56f6ba3d1a6e210cf43af05491cfbd1c1cbb37e5",
+      "bytes": 6140
+    },
+    {
+      "path": "tests/test_imu_record.py",
+      "sha256": "8f8350781c8ed8b3abea433c2f646c7bb0cf4597fcc7359168cc405b62719ccd",
+      "bytes": 6031
+    },
+    {
+      "path": "tests/test_joystick_control.py",
+      "sha256": "115f247406c7ef4affce4dd0fe243bca3e9ed60d649928bf579b5e506d3696e6",
+      "bytes": 5584
+    },
+    {
+      "path": "tests/test_joystick_desktop_a1.py",
+      "sha256": "d8f73a5f556c9b63e7489240334ea875090b64c01795ebcd40bff24caa2e7d6f",
+      "bytes": 1670
+    },
+    {
+      "path": "tests/test_lidar_record.py",
+      "sha256": "bbfe788732addf33c99d6e32b07ba85758b61a675561068bf39e882d2e1b4465",
+      "bytes": 6846
+    },
+    {
+      "path": "tests/test_live_steering_trial.py",
+      "sha256": "32b09c0caa5675a1df11429675e9bf258b2cd4472872333bf4b85613ff05479c",
+      "bytes": 38854
+    },
+    {
+      "path": "tests/test_main_event.py",
+      "sha256": "d6870249626c50212adb9d833a5858db4c388d3ffb18fcfa702f7b394b86cefb",
+      "bytes": 18960
+    },
+    {
+      "path": "tests/test_main_event_autonomy.py",
+      "sha256": "8346b475f841e9c34a92158e1268cfe81c9a7529ef75d3ea803570c808a75380",
+      "bytes": 5405
+    },
+    {
+      "path": "tests/test_main_event_degraded.py",
+      "sha256": "77fd4f7304515695bd944ef267c3114b1401cbbf3afc6bcfb3b000da5e1eb698",
+      "bytes": 8578
+    },
+    {
+      "path": "tests/test_main_event_finish_fallback.py",
+      "sha256": "885e4ccca7c2bf07f8f62296abeb35136124dc8568121f072267cc981463f439",
+      "bytes": 2480
+    },
+    {
+      "path": "tests/test_main_event_lidar_direction.py",
+      "sha256": "3319de32630e9f243ce25e24f0c29477a294891894a7d761f00667c2a61b8118",
+      "bytes": 2464
+    },
+    {
+      "path": "tests/test_main_event_lidar_pipeline.py",
+      "sha256": "b4da28374babc1f20a81f5e760d8a18a3961cb09fae0f1a1ab5d526929cdda00",
+      "bytes": 4164
+    },
+    {
+      "path": "tests/test_main_event_lidar_scope.py",
+      "sha256": "de79727cfdf57bd6a831e6f265eee3c08a99041904da4da83f581271f02c98ae",
+      "bytes": 3801
+    },
+    {
+      "path": "tests/test_main_event_live_blocker.py",
+      "sha256": "36c05d665c90f92f19a1fe30e38e71df7a39dcbb5b6ce30c93807739b13ea5fc",
+      "bytes": 4608
+    },
+    {
+      "path": "tests/test_main_event_maneuvers.py",
+      "sha256": "f015404a836f38c02f460250c82858099e06c521730875835f1d05d4ba780210",
+      "bytes": 5823
+    },
+    {
+      "path": "tests/test_main_event_manual.py",
+      "sha256": "e3e1ad338861d86d456b5fad1db549e1a97d2f1d23033081ee290e01aef7a317",
+      "bytes": 4760
+    },
+    {
+      "path": "tests/test_main_event_manual_protocol.py",
+      "sha256": "64e87e4bae59322db4db4cdc74c715f9f6d5f9808ad81f1c8aecae41ecfb7b38",
+      "bytes": 6867
+    },
+    {
+      "path": "tests/test_main_event_menu.py",
+      "sha256": "59b2bb75a3eaf4c1b131f145a44a95d7f0a09edc428aafed1e88a80c03fb83f0",
+      "bytes": 4372
+    },
+    {
+      "path": "tests/test_main_event_parking_selection.py",
+      "sha256": "e60337f3baa1b2502fd4d72fbc6640f7171610eb3ffada4317a542864a480212",
+      "bytes": 1563
+    },
+    {
+      "path": "tests/test_main_event_planner_worker.py",
+      "sha256": "813ff2edfd0128d9fb89de847be31c8fc75ed2b095dcb8aba35ea7baa1d6d7d2",
+      "bytes": 4665
+    },
+    {
+      "path": "tests/test_main_event_rejoin.py",
+      "sha256": "7286e8fb38f3c9e3221d4683e0608db0c7e2ce1a2a95eed6ad2b3b1309b45984",
+      "bytes": 4807
+    },
+    {
+      "path": "tests/test_main_event_runtime.py",
+      "sha256": "474b1b2a2a833d1b654ec40fb32a134d968a2231b1d65981090843e387d56e26",
+      "bytes": 33277
+    },
+    {
+      "path": "tests/test_main_event_s_fallback.py",
+      "sha256": "c88afe0f01a79fc515c9ea3d7fb40f3cd0da984181b92bc65664b287893ad816",
+      "bytes": 3608
+    },
+    {
+      "path": "tests/test_main_event_s_stall.py",
+      "sha256": "4deea3074ecfb4db69768c50da9e89853952c1f2960e8dfef09cc99124878d36",
+      "bytes": 4540
+    },
+    {
+      "path": "tests/test_main_event_serial_ready.py",
+      "sha256": "4cc3d749b63a53428950099704a9e1ac3b8c183a8dc0f52fd26bac8496710422",
+      "bytes": 3235
+    },
+    {
+      "path": "tests/test_main_event_signal_boundary.py",
+      "sha256": "9528ea78ece5675c50f030afd75c10e7833b644d957d794c58ba7ead0d4e8095",
+      "bytes": 3504
+    },
+    {
+      "path": "tests/test_main_event_speed.py",
+      "sha256": "6381549c8f17c951082c2058e63910cf2e85eb4c747cc44693ea4020417cbfad",
+      "bytes": 5045
+    },
+    {
+      "path": "tests/test_main_event_startup.py",
+      "sha256": "6a12768999526b7f7c4af34ff79e9db0176aa2f0790c0e53a14b5b8e264a0964",
+      "bytes": 8275
+    },
+    {
+      "path": "tests/test_main_event_stop_tx.py",
+      "sha256": "edb1db11747123d01722a9d13fce3d9440aaf1fabc1bb93846443f0685bfb160",
+      "bytes": 2003
+    },
+    {
+      "path": "tests/test_main_event_waiting_service.py",
+      "sha256": "0da07951230afc202c7e50422f24db1c0bade95167246f9e21a297bc94ff406e",
+      "bytes": 2576
+    },
+    {
+      "path": "tests/test_manual_control.py",
+      "sha256": "d3ebfe1c62cca215354c280b85c52ebcc2e2db81449fc2a8b41cfd33c8f34774",
+      "bytes": 20531
+    },
+    {
+      "path": "tests/test_ntrip_recovery.py",
+      "sha256": "0c02d4ed7b4a9cc27b49137c01463ae0c4d82d63e3b38606a5fa2883283716e1",
+      "bytes": 2957
+    },
+    {
+      "path": "tests/test_path_follow_inputs.py",
+      "sha256": "35caaee24e26a7ebca82a4211ba118cbabb8ec08254319c1988488797ed16776",
+      "bytes": 8190
+    },
+    {
+      "path": "tests/test_path_steering.py",
+      "sha256": "02cd0daf4beafc9116d78cc36c1a116c0f396008fda237a67c15bbc2dea9496b",
+      "bytes": 18924
+    },
+    {
+      "path": "tests/test_path_steering_bridge.py",
+      "sha256": "25e5097002bcf57bbc15908eeaeae1dfbb1d7ff3999d95d0479277d87fd336e1",
+      "bytes": 7735
+    },
+    {
+      "path": "tests/test_path_steering_end_progress.py",
+      "sha256": "a6c467a3fcf90b4eb097c6baebfe2fc280c13af927d666816fa1730cfb20d653",
+      "bytes": 1265
+    },
+    {
+      "path": "tests/test_pose_reference.py",
+      "sha256": "50dc3d27ffa7a73c69c4eb4fb39763023508c29d7d615d1fd190c4a13c98cd43",
+      "bytes": 15930
+    },
+    {
+      "path": "tests/test_pose_reference_review.py",
+      "sha256": "56e5252135685c82d8f53bd99625f1e508ed2f6f0d5aaab1960d0209abf82e9a",
+      "bytes": 1732
+    },
+    {
+      "path": "tests/test_qualifier_follow.py",
+      "sha256": "a90b0323eb4a0a68c2a46b95c001518bef09c22c8bcd5b639a77fd1619bc5223",
+      "bytes": 19989
+    },
+    {
+      "path": "tests/test_qualifier_route.py",
+      "sha256": "58b4ff40ea5d41d5026e699dad12b06bfd554999698294f75860438e3796b934",
+      "bytes": 18503
+    },
+    {
+      "path": "tests/test_rear_pulse_test.py",
+      "sha256": "981b73c2cd77dae489c1f3102a33279c33836b393c028e6b360a8645459644b7",
+      "bytes": 8245
+    },
+    {
+      "path": "tests/test_record_field_session.py",
+      "sha256": "8c739ffc575e7b195740aa125e0cef99cd68494c9c1811e3c73f6dda39f9c8b4",
+      "bytes": 6691
+    },
+    {
+      "path": "tests/test_reversal_while_driving.py",
+      "sha256": "c2f1b09afeca553ae1512db642dff43f236b6c8958fb158915ac7b54c66d3fc6",
+      "bytes": 3377
+    },
+    {
+      "path": "tests/test_route_preview.py",
+      "sha256": "2fddddb8138e94739ac0de66ab89fb62306006a13ff8ca151c70599792f3449f",
+      "bytes": 5080
+    },
+    {
+      "path": "tests/test_rtk_record.py",
+      "sha256": "3f8025b78cce109b37fb73d67f39761a4b37b10f01ff9943e93b97db982f7c12",
+      "bytes": 17157
+    },
+    {
+      "path": "tests/test_sensor_monitor.py",
+      "sha256": "dfe989413c73340ebfaa141aa50e24163563a5adc9817b45da8953e446c489e1",
+      "bytes": 2908
+    },
+    {
+      "path": "tests/test_start_gnss_recording.py",
+      "sha256": "2acf789f868ae6b8c2d2a269d299ef24adb861ebba14de26cc5a8382d6e92516",
+      "bytes": 2958
+    },
+    {
+      "path": "tests/test_steer_pulse_test.py",
+      "sha256": "ab6197b16d8c3044f1520b493536b8b19d8ac8627e45de73e029a8078bfb18b1",
+      "bytes": 9455
+    },
+    {
+      "path": "tests/test_steer_right_pulse_test.py",
+      "sha256": "e8e8e176206079ae3462883085cb03c0bd50eaec36525efb66023535c35bdf0d",
+      "bytes": 13523
+    },
+    {
+      "path": "tests/test_steer_target_host.py",
+      "sha256": "fae93dab248b7beaf965cb8aaadeca0eb9baa9f8c532d45c4bdbafb1471c3a65",
+      "bytes": 14574
+    },
+    {
+      "path": "tests/test_steering_calibration.py",
+      "sha256": "0a9b43af7a248bf66ee76fed29b4243d16faf14470126b3d37589f31c072660f",
+      "bytes": 10563
+    },
+    {
+      "path": "tests/test_steering_center_receiver.py",
+      "sha256": "b5b7189a20fa2bb90e853b3ce510602ec2fc277f579a17532b6ffa301d8b0844",
+      "bytes": 17716
+    },
+    {
+      "path": "tests/test_steering_center_receiver_tk.py",
+      "sha256": "637d742cdae72f9c0f4ee54f80b1b065509424b11f51774b5ee8a021e56cc940",
+      "bytes": 5069
+    },
+    {
+      "path": "tests/test_step_manual_control.py",
+      "sha256": "eb4e1f3e32e008350b653f0036fa1602c6cf147dc8472114b8290dcc78dde5a5",
+      "bytes": 27153
+    },
+    {
+      "path": "tests/test_step_manual_keyboard.py",
+      "sha256": "15926540993be349323209a15aa37bffb698506ae432b05c2b3355ad79e6b8d1",
+      "bytes": 6777
+    },
+    {
+      "path": "tests/vision_offline/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "tests/vision_offline/test_boundary_candidates.py",
+      "sha256": "e01e051db77d2c39dd67e0406ef21c88a262c62cd7e7016e31a0833de7b3426b",
+      "bytes": 4193
+    },
+    {
+      "path": "tools/a1_steering_record.py",
+      "sha256": "5192c1c106ad0529517070dc33e12c0833644e50355b24953365dc4cab2f06ae",
+      "bytes": 12532
+    },
+    {
+      "path": "tools/arduino_monitor_receive.py",
+      "sha256": "54f6287aacea8275e608a93d97a21a86f7f39f971a7ad4244eaa5c8337b62117",
+      "bytes": 5531
+    },
+    {
+      "path": "tools/backup_mega.py",
+      "sha256": "c5642e678a142aa243e0d9475557e3bec221f609b5382bc93e907ab1b57b539f",
+      "bytes": 4920
+    },
+    {
+      "path": "tools/build_data_share.py",
+      "sha256": "cf1bce05ef1ded0b48f6b97ac4ed8dedf5d03793f2741c33f6a124470fdcff48",
+      "bytes": 6169
+    },
+    {
+      "path": "tools/c5_checks.py",
+      "sha256": "aa118733b03247eff762c99924a95623ecbb6695550fc4bb80d0f0a783360945",
+      "bytes": 2559
+    },
+    {
+      "path": "tools/camera_check_recording.py",
+      "sha256": "f9815fa2d7a6f221e1f7126b29179568c9bac53b74799e5b5a23d6148bf83b5a",
+      "bytes": 11427
+    },
+    {
+      "path": "tools/camera_record.py",
+      "sha256": "90deb981861198f8cbf3ee7a8b928d9d8cd37ac047c689d07d2edcabace515cb",
+      "bytes": 15709
+    },
+    {
+      "path": "tools/check_devices.py",
+      "sha256": "2e167c8fafe640d8552c0eeecf743163fa6585d7470142cf5bd841ba630bca2f",
+      "bytes": 15204
+    },
+    {
+      "path": "tools/claude_offline_job.py",
+      "sha256": "d132e80ddd7c0ff46bee19c823679dd5a6d82db23d279ad1cd7095f9ac1a7e95",
+      "bytes": 4030
+    },
+    {
+      "path": "tools/claude_workspace_job.py",
+      "sha256": "852f1813b90a49986e10baa861ae4e4e6f4be166ecb4ba64363c0b04103535c8",
+      "bytes": 4101
+    },
+    {
+      "path": "tools/configure_ntrip.py",
+      "sha256": "3faded7d7f807eff8872c52eb4c439dacc483435994066323414a91deaf0005d",
+      "bytes": 5657
+    },
+    {
+      "path": "tools/dev_run_log.py",
+      "sha256": "0eb0d6f9b1d2ea2ba1237599cd89fb0aedbfb3529111afdf921de8fb6bb4d823",
+      "bytes": 6108
+    },
+    {
+      "path": "tools/export_conversation_archive.py",
+      "sha256": "a929de5cf0f430f53b992e429fecc82437138c97ec4cb13f70fc7e1b6161a24a",
+      "bytes": 10297
+    },
+    {
+      "path": "tools/front_pulse_test.py",
+      "sha256": "d431b58a50d857ddffbc0ea7859ebda103cb74cc12cebf2531b19cfda42613b4",
+      "bytes": 16462
+    },
+    {
+      "path": "tools/gamepad_input.py",
+      "sha256": "0e76630a97cd543d4660357288685710dd4641a0856a00724cba86313fd80c76",
+      "bytes": 2553
+    },
+    {
+      "path": "tools/gnss_analyze.py",
+      "sha256": "382dfe548762f7c55ed3a3b954c5ec977db1ca38559787f9592bf99889e562fc",
+      "bytes": 8492
+    },
+    {
+      "path": "tools/gnss_diagnostics.py",
+      "sha256": "106ba1318eba5cb704ada555f1a8d39f90460109dd2051ab4fc068ebad7dd800",
+      "bytes": 14373
+    },
+    {
+      "path": "tools/gnss_record.py",
+      "sha256": "68ffa849817961afa699a632f224b9aa5c1ede56ec632d02e5137c37d8e73129",
+      "bytes": 14341
+    },
+    {
+      "path": "tools/gnss_set_rate.py",
+      "sha256": "984472298496412d1ef10615f9014753f0ac4cbf6cd6db9d999cc2358316db53",
+      "bytes": 2825
+    },
+    {
+      "path": "tools/hyper_signal_offline.py",
+      "sha256": "e3b05cb5458a5e618c772242c04c9e617be361823e3ee980c5cc3ae3ae6f82f0",
+      "bytes": 4123
+    },
+    {
+      "path": "tools/imu_power_record.py",
+      "sha256": "6f1812030dce4cb858211d771ecec975b191d83d5548f8190f1bf2034e6dc8eb",
+      "bytes": 5569
+    },
+    {
+      "path": "tools/imu_record.py",
+      "sha256": "e4b17bf9d60e55ed000fa4003397849ef821ae5271672c8e0042c4eafa33ebdb",
+      "bytes": 10762
+    },
+    {
+      "path": "tools/integrated_replay.py",
+      "sha256": "3bed641ad2708787a877921dbe40c4d62dea6a6cee615fe9069506c0d98f6fa4",
+      "bytes": 38952
+    },
+    {
+      "path": "tools/joystick_control.py",
+      "sha256": "5e9a4ea8a7c4f0a0eb94a8d948d049c1e9d4ee7d68d7af3d1860ad28ff10b6db",
+      "bytes": 9671
+    },
+    {
+      "path": "tools/joystick_desktop.py",
+      "sha256": "b9e35eaefc8b2be69c54981a3072abd32088b5419a2ae296478064212cd815db",
+      "bytes": 9563
+    },
+    {
+      "path": "tools/joystick_protocol.py",
+      "sha256": "6b7543f42809109435956db54720e5551df30cbf905b65af967ca6bf7b769d26",
+      "bytes": 3161
+    },
+    {
+      "path": "tools/lidar_record.py",
+      "sha256": "3b1bee186998af2f2bc891c83038e8287f3b28fdb68001bfcffd3a075b194c44",
+      "bytes": 16215
+    },
+    {
+      "path": "tools/live_path_follow.py",
+      "sha256": "a4b4d49a0f54508c6ce93cc1d91201f101a7ea6d03c30665b97dadce92b5cc6a",
+      "bytes": 17310
+    },
+    {
+      "path": "tools/live_steering_trial.py",
+      "sha256": "3aae8b8ffffc87e06c4192dcf10b4f6d298a0c69db46d28445c7320d65fcebef",
+      "bytes": 44602
+    },
+    {
+      "path": "tools/main_event.py",
+      "sha256": "fd0a893fb7b563229927b1fcc3e1fff78285a815b34cdd5a6902f3a701374b09",
+      "bytes": 21452
+    },
+    {
+      "path": "tools/main_event_audit.py",
+      "sha256": "f6a2b19de8289180bd774ebd9142eb6b2c3269d5f56f81a58db7aeee2452dea6",
+      "bytes": 2908
+    },
+    {
+      "path": "tools/main_event_autonomy.py",
+      "sha256": "ca5fc7df20ddf0c9d5759af8777b85d56e4e22a00f9cebdcfb505b83ebe73684",
+      "bytes": 4258
+    },
+    {
+      "path": "tools/main_event_camera.py",
+      "sha256": "8e9df059e305ec5ecf7400677fa9b30e48bcf5c85840aa4333fac22384f80633",
+      "bytes": 2911
+    },
+    {
+      "path": "tools/main_event_control.py",
+      "sha256": "74a5c505ee723e93887ae38418b2a5c684caf4d72746e5ab327a00537d7ab1f3",
+      "bytes": 2696
+    },
+    {
+      "path": "tools/main_event_core.py",
+      "sha256": "44e7166df8f16772ae16ef395bf74721f658eb15bd84af052a8eda10fb535df3",
+      "bytes": 18053
+    },
+    {
+      "path": "tools/main_event_degraded.py",
+      "sha256": "281af6a7e358e8718037fba0aa9210aa50c2f6fcd4ca09099cea7ee679fc8a8a",
+      "bytes": 4027
+    },
+    {
+      "path": "tools/main_event_finish.py",
+      "sha256": "37543bd259079faf99382f2575b1c63c13743b4ffcde9063dee84f8c1eed80ce",
+      "bytes": 1442
+    },
+    {
+      "path": "tools/main_event_lidar.py",
+      "sha256": "2ef4528a650c07d72b1c51fb10c9262360727ed412a84b32e30c4b9a58ba2af5",
+      "bytes": 13054
+    },
+    {
+      "path": "tools/main_event_lidar_direction.py",
+      "sha256": "5f3a49cf02d466731d631046f414f22ef5c601e373680ef3f5460d9124620200",
+      "bytes": 6246
+    },
+    {
+      "path": "tools/main_event_lidar_scope.py",
+      "sha256": "86e9dd5a7f0155e1c6cb8bf2a78b42ab43fa5503c130a3915ff16a39fb02b4ff",
+      "bytes": 966
+    },
+    {
+      "path": "tools/main_event_maneuvers.py",
+      "sha256": "dc756921b63ea7453c580cb5f05e61ebf833e6ae17e76eecfd1858430ed12f03",
+      "bytes": 17767
+    },
+    {
+      "path": "tools/main_event_manual.py",
+      "sha256": "cef80e44ba7da470b7cb73b704bd44bc004cc1ef5d6f13f8b616dd69590b2bba",
+      "bytes": 6960
+    },
+    {
+      "path": "tools/main_event_menu.py",
+      "sha256": "896ea750a6ef2de0cc8c1bfda7574d8fec554a4ce8c228c5c519f1e74661c069",
+      "bytes": 15054
+    },
+    {
+      "path": "tools/main_event_motion.py",
+      "sha256": "3d056cab8df6c5d3896912c3736c443a966e03b8c588e209e7c6509b93793b52",
+      "bytes": 5118
+    },
+    {
+      "path": "tools/main_event_plan.py",
+      "sha256": "a277f1eea13e7068450f3a941d0353663f13ef82ef39b5712c5226a9733cd459",
+      "bytes": 13045
+    },
+    {
+      "path": "tools/main_event_planner_benchmark.py",
+      "sha256": "9cea32baf0920968398a40cc76aab54e6a0bcdabec812ffdb4c10a6ce9db2bf9",
+      "bytes": 1400
+    },
+    {
+      "path": "tools/main_event_planner_worker.py",
+      "sha256": "8b6b12e836dac526666d05d64baababa46ac838b51fb380e679f834be45a6f93",
+      "bytes": 1059
+    },
+    {
+      "path": "tools/main_event_rejoin.py",
+      "sha256": "521406819b653ecfb8c7a07607cd6967fba02cc1ecea7b6b71363ff3b28a8cfc",
+      "bytes": 4816
+    },
+    {
+      "path": "tools/main_event_release.py",
+      "sha256": "fe9959ff87dd8d0730a3791c6d505c827bcb4139d8dd2859e5310c72e9c531dd",
+      "bytes": 10118
+    },
+    {
+      "path": "tools/main_event_route_audit.py",
+      "sha256": "92e202dba67dcacafd27c1dc3efc67930f1cf7c5527d12b2a307f4c3d991fc95",
+      "bytes": 2236
+    },
+    {
+      "path": "tools/main_event_runtime.py",
+      "sha256": "661f62758e3e468045e02d5d3e5e847b27f9a826e4e4294f666a007e5c9e7cad",
+      "bytes": 51395
+    },
+    {
+      "path": "tools/main_event_sequence.py",
+      "sha256": "172f9a1ee206749c1c4e46022f930b087e8fcfaa06c1a9b30f6ae251c8da8135",
+      "bytes": 12695
+    },
+    {
+      "path": "tools/main_event_serial.py",
+      "sha256": "e666d758e6ea6d5af546f63fc29178e8d7fc094e78a45b3443adb95d75557386",
+      "bytes": 2435
+    },
+    {
+      "path": "tools/main_event_signal.py",
+      "sha256": "d6b75d6182ab590285b7922f490262b7a99a3345b4fea513743aedf24dc6eb15",
+      "bytes": 7069
+    },
+    {
+      "path": "tools/main_event_speed.py",
+      "sha256": "a77a86720f38c43146118e7086aa6423c59e04c56befb57b45dd8374796b4827",
+      "bytes": 2827
+    },
+    {
+      "path": "tools/main_event_start_left.py",
+      "sha256": "3afc1093a5782d5bf9e76007ba1df2cdb1f3bccf09354aba31801412bd095b50",
+      "bytes": 4597
+    },
+    {
+      "path": "tools/main_event_startup.py",
+      "sha256": "180ac2412d03b0bea4a0d05a3a000784c97778a21248d8253a3b53af2b37dea3",
+      "bytes": 3766
+    },
+    {
+      "path": "tools/main_event_stop_recheck.py",
+      "sha256": "4fc83ec48d124f2feb823417d7cd208b6e72c849f5fb493fab27d3251a35ec39",
+      "bytes": 3994
+    },
+    {
+      "path": "tools/manual_control.py",
+      "sha256": "0d6d79ec2301ed8261f8326ae14684767798d54f80bca5a61399d4e0b87ed744",
+      "bytes": 30296
+    },
+    {
+      "path": "tools/manual_protocol.py",
+      "sha256": "3d647513259671304a14c1e8695a1c9c4f8a06afa9a7894ee907334c08c50000",
+      "bytes": 6132
+    },
+    {
+      "path": "tools/manual_session_start.sh",
+      "sha256": "2d743dcfa081b7476bc4fd6f64b7b000ac625b42f3f01bdb8985d9cecc7dc335",
+      "bytes": 1935
+    },
+    {
+      "path": "tools/ntrip_recovery.py",
+      "sha256": "e5da4d3ca0409ba0a609a08e5f09aac1febd722065bcf3662ac3553e22729a97",
+      "bytes": 4587
+    },
+    {
+      "path": "tools/oak_burst_capture.py",
+      "sha256": "7397e90ae0ec76fbc0b2240aeb16090e0e3a62cb166c3ba9734eb82369ef071d",
+      "bytes": 2159
+    },
+    {
+      "path": "tools/oak_burst_live.py",
+      "sha256": "7ef15435b3501ff3b6dbd746c7c115f89c1c14400a052eb70ee8d11a1c651302",
+      "bytes": 2329
+    },
+    {
+      "path": "tools/oak_rgb_monitor.py",
+      "sha256": "bd700996dfac371444303dccd201cc1a6dd4a632df556be40cc6ee4ef01b746b",
+      "bytes": 6657
+    },
+    {
+      "path": "tools/path_follow_inputs.py",
+      "sha256": "1f95aeb59ebb0905a414978edefd697f1fb2d84e3e8fca336864df2f9d6287b9",
+      "bytes": 6423
+    },
+    {
+      "path": "tools/path_steering.py",
+      "sha256": "b94ef607f7019feec3d73cf769aa18d69cb4a93420b4557ac411f2dabafe0b49",
+      "bytes": 19870
+    },
+    {
+      "path": "tools/path_steering_bridge.py",
+      "sha256": "4872e1cd079ecc25964ea1ec7d5c6b18b6c470194b3df0dc899e112db90de54a",
+      "bytes": 4796
+    },
+    {
+      "path": "tools/path_steering_sim.py",
+      "sha256": "9bb8a3a28cd2338a9c4abb7b18d62dcc74ea6f9db6d79c593d67ed4bb2dac51d",
+      "bytes": 15521
+    },
+    {
+      "path": "tools/plot_gps_review.py",
+      "sha256": "23db0c8689f1bec88626499ac476943a062658da04d923fa181477dd1099733e",
+      "bytes": 5282
+    },
+    {
+      "path": "tools/pose_reference.py",
+      "sha256": "918b791c81dfcdec8c9c0e111eb52ef1daf50bd274f60ab70713b0c13f4b9605",
+      "bytes": 13013
+    },
+    {
+      "path": "tools/probe_imu_lidar_once.py",
+      "sha256": "5f1f9d31ef9cb585825fd8793fc377c7efd86675e4ff369ef0a645e55795dbe9",
+      "bytes": 9449
+    },
+    {
+      "path": "tools/qualifier_follow.py",
+      "sha256": "620049531dcadf50324ef23b0fe9635ef9ca0249bac2a05bbbafe0e20bb7db1b",
+      "bytes": 47047
+    },
+    {
+      "path": "tools/qualifier_route.py",
+      "sha256": "145b397af55e578a6f69df3253edba43c13c9007b5fe03d8caf2c8d71b98e1db",
+      "bytes": 32891
+    },
+    {
+      "path": "tools/rear_pulse_test.py",
+      "sha256": "858df038974406f42fdd9f430b72d12d069072c4b28ba51c272ae2cae8ae6ca8",
+      "bytes": 16455
+    },
+    {
+      "path": "tools/record_field_session.py",
+      "sha256": "741906a8b954973e428d251fcf26f0fceb5446670a14d77ecebbe42f4f7ce91b",
+      "bytes": 21050
+    },
+    {
+      "path": "tools/route_preview.py",
+      "sha256": "1354cde74a26755fc56487339f81de36e916f5f145e485264be57ab129a29b0f",
+      "bytes": 14471
+    },
+    {
+      "path": "tools/rtk_record.py",
+      "sha256": "7423a206aaefc43c8796805fb0ebe6f5046d3719ff0a542ca017f7807767c473",
+      "bytes": 19597
+    },
+    {
+      "path": "tools/sensor_monitor.py",
+      "sha256": "c577518ac6f23711e6d7421e5f9864270e3439a00d65ce62f72fa5b9973f389f",
+      "bytes": 6857
+    },
+    {
+      "path": "tools/start_gnss_recording.py",
+      "sha256": "34b36818eac599958d5cc9d8088df0501cba155ef35eec30a24c379fc024a674",
+      "bytes": 2998
+    },
+    {
+      "path": "tools/start_rtk_recording.py",
+      "sha256": "98b1f8faae8210beea6274e6678a835142399bd2fdc77c0254a7fabfac43254a",
+      "bytes": 1714
+    },
+    {
+      "path": "tools/steer_pulse_test.py",
+      "sha256": "8c1847447bb9c5dcad31769fe1cdda8956fde47285e1e5c2a8f4f441894a8c73",
+      "bytes": 16726
+    },
+    {
+      "path": "tools/steer_right_pulse_test.py",
+      "sha256": "9a9cf8d3c86642becb82821be158ac92fec06122fef33f5eb943d46ca0a7370a",
+      "bytes": 18748
+    },
+    {
+      "path": "tools/steer_target_host.py",
+      "sha256": "c63ee26f95b1c409862fcad197302f0125fba94182a8d61dae818df175346fca",
+      "bytes": 18653
+    },
+    {
+      "path": "tools/steer_target_sim.py",
+      "sha256": "a5eeb079b9d7550d879931672749c60fdf652c5d2468c19a21c41ea0922894c8",
+      "bytes": 26960
+    },
+    {
+      "path": "tools/steering_angle_contract.py",
+      "sha256": "f8df89b5401b0572e1f3cfd860cbb70af04f2ed733274b1ca44dd33511c0a194",
+      "bytes": 6302
+    },
+    {
+      "path": "tools/steering_calibration.py",
+      "sha256": "242365a0c82fb33533cf8d523d07fc3c384503ad9e6ce4dc66885a248791e613",
+      "bytes": 10366
+    },
+    {
+      "path": "tools/steering_center_receiver.py",
+      "sha256": "d5f0bbb7e28041062f2b3e5c8ce58c6511b2f541ae092fe6b5b0b9c2761326d4",
+      "bytes": 23136
+    },
+    {
+      "path": "tools/step_manual_control.py",
+      "sha256": "67fb4434b44c3c88d16fdcc55cd07b13b6ed8e512aa3e37cb29e1c90ecc27a70",
+      "bytes": 37620
+    },
+    {
+      "path": "tools/step_manual_protocol.py",
+      "sha256": "b8c16bfd6363e7015475394baa1d9c9ee7ec72d35a37e189236b0d764c959310",
+      "bytes": 6822
+    },
+    {
+      "path": "tools/ultrasonic_telemetry.py",
+      "sha256": "2be39448dfaf786f2df30d8a2d8d44aad2b4392772331b13cf3b5432d78acf76",
+      "bytes": 637
+    },
+    {
+      "path": "tools/upload_front_pulse.py",
+      "sha256": "78e6ffa43120761702af05c0a435976d6e884cd0694e94fa7113cb0e0f409e9d",
+      "bytes": 5422
+    },
+    {
+      "path": "tools/upload_joystick_manual.py",
+      "sha256": "ac9529ae8cf7fad5c496290c5039b87e947be14e207b5efee3e2102c3f5a6d0e",
+      "bytes": 2965
+    },
+    {
+      "path": "tools/upload_manual_bench.py",
+      "sha256": "e3aff985741bc8927a6b0b7a2b55441f1438bc13c61bd764bde52c3da67c7cbc",
+      "bytes": 4838
+    },
+    {
+      "path": "tools/upload_rear_pulse.py",
+      "sha256": "76158ba2dae06227f187a4c8e7390d4472c9e89e5963a535161e24415e2d34f6",
+      "bytes": 5413
+    },
+    {
+      "path": "tools/upload_steer_pulse.py",
+      "sha256": "885991c26a792c8b282e4617106f73ac11479604962bae0dd7eea59e06c8057b",
+      "bytes": 5511
+    },
+    {
+      "path": "tools/upload_steer_right_pulse.py",
+      "sha256": "e34e1ff7afa296a971badf54e9d63bad29c4cf3380ced64356d3b9ca92b68d65",
+      "bytes": 5565
+    },
+    {
+      "path": "tools/upload_step_manual.py",
+      "sha256": "92ef70b2ff69a0925ada9a904a15ec3eee6212da2eeb9e865d37e04cbc5a9c2f",
+      "bytes": 5627
+    },
+    {
+      "path": "tools/verify_manual_bench.py",
+      "sha256": "a5d3442660ad85c2815d8ef4e743af7666fe5abd5a370eab89a67f8d024f6f1f",
+      "bytes": 11634
+    },
+    {
+      "path": "tools/verify_manual_ui.py",
+      "sha256": "6fd7260004764998b17d45641fbd4035e10c699798f0be3f600bfde2507d68ba",
+      "bytes": 11977
+    },
+    {
+      "path": "tools/verify_step_board.py",
+      "sha256": "7339695f5fa77586a0e00a9d788c6d424e6154545eb102f4fb852755cb744168",
+      "bytes": 18537
+    },
+    {
+      "path": "tools/verify_step_manual_ui.py",
+      "sha256": "1d378f302ed305a089164e38474acb00356280cece7a2a2eefa4e26389497ac9",
+      "bytes": 10991
+    },
+    {
+      "path": "tools/vision_offline/boundary_candidates.py",
+      "sha256": "09cfdcd53e4b9f9b8503ad73d8fa04ef5593b27af16a7bd1da94b24a2af8ab6d",
+      "bytes": 14002
+    },
+    {
+      "path": "tools/vision_offline/grid_preview.py",
+      "sha256": "87fe0b47d24055bb17ddc872f420b40dc31d522b1b7542dec459425c593a5ac5",
+      "bytes": 2802
+    },
+    {
+      "path": "tools/vision_offline/intake_received2.py",
+      "sha256": "14bc40a61f8d911939e2416cad83c92fc67ecb29f0f71a0d20c4e3a42e16d0b6",
+      "bytes": 6659
+    },
+    {
+      "path": "tools/vision_offline/oak_input_check.py",
+      "sha256": "140cda728878eb6e9581a12047d1a00fe49e9767f42c4060de2b0f9fcf3ded17",
+      "bytes": 13735
+    },
+    {
+      "path": "tools/vision_offline/run_prototype_batch.sh",
+      "sha256": "13016fe4e1fd49bf443ad9ba2f6754424116c1503accd102e64f49c9c40b2089",
+      "bytes": 1865
+    },
+    {
+      "path": "tools/vision_offline/sample_overlay.py",
+      "sha256": "d7620bdc7905e6f0f6898a517af4765b327aa57056de2a4a475f9f011e177f97",
+      "bytes": 5058
+    },
+    {
+      "path": "tools/vision_offline/verify_v03_v2.py",
+      "sha256": "8083ee2ee505ceb45a938c25d5f71d9904c4142b0dec288198e46ce3f2e43ce6",
+      "bytes": 8376
+    }
+  ],
+  "secret_pattern_findings": [],
+  "scan_limitations": "Pattern scan only; does not certify all privacy, licensing, or runtime dependencies.",
+  "excluded": [
+    "NTRIP credentials (never read)",
+    "raw data/videos/photos",
+    "virtual environments and binaries",
+    "full conversations",
+    "third-party HYPER repository, models and routes",
+    "rule PDFs and external datasets",
+    "full release hash inventory for locally retained/external assets"
+  ],
+  "intended_parent_commit": "304ffa75d631df1796137a2e7ffecaa863bcb24f",
+  "publication_visibility": "private"
+}
