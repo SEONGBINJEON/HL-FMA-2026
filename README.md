@@ -1,6 +1,6 @@
 # HL FMA 2026 — 대회 준비와 자율주행 구현 기록
 
-1/5 스케일 차량의 센서 연결, RTK GPS 경로 추종, 조향 제어, 신호 인식, 미션 통합과 현장 문제 해결을 기록한 프로젝트다. **대회는 종료됐으며, 예선 통과 후 본선에서는 경사로를 통과하고 첫 신호등에서 재출발하지 못했다.** 전체 완주 성공 프로젝트로 소개하지 않는다.
+1/5 스케일 차량의 센서 연결, RTK GPS 경로 추종, 조향 제어, 신호 인식, 미션 통합과 현장 문제 해결을 기록한 프로젝트다.
 
 [전체 기록](docs/retrospective/2026-09-29/README.md) · [개발 과정](docs/retrospective/2026-09-29/TIMELINE.md) · [구성](docs/retrospective/2026-09-29/ARCHITECTURE.md) · [첫 신호등 실패 분석](docs/retrospective/2026-09-29/LIGHT1_FAILURE.md)
 
